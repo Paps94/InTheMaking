@@ -1,0 +1,548 @@
+/* =================================================
+
+Name:  Antreas - Personal Responsive Bootstrap Template
+Author: Antreas Paapadopoulos
+Version: 1.0
+
+NB: This is the responsive stylesheet of this theme.
+
+=================================================== */
+
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .nav > li > a {
+        font-size: 14px;
+    }
+    .about-right p {
+      text-align: justify;
+    }
+    #Carousel{
+      height: 600px;
+    }
+    #Tech{
+      border: none;
+      margin: 0;
+    }
+    #Project h1{
+      text-align: center;
+    }
+    #Project h2{
+      text-align: center;
+    }
+    #Project p{
+      text-align: justify;
+    }
+    .Link-Button {
+      position: relative;
+      left: 30%;
+      margin: 0 auto;
+      align-self: center;
+      float: none;
+    }
+    #x1 {
+      top: 77%;
+    }
+    #x {
+      top: 77%;
+    }
+    .carousel__indicator {
+      margin: 0 2.5px 30px 2.5px;
+    }
+    #specialrow {
+      border-left: 3px solid #E15F41;
+      border-right: 3px solid #E15F41;
+    }
+    .banner-area {
+        height: 100%;
+    }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about-right p {
+      text-align: justify;
+    }
+    #Carousel{
+      height: 500px;
+    }
+    #Project{
+      margin: 0 0 10px 0;
+    }
+    #Tech{
+      margin: 0 0 10px 0;
+      border: none;
+    }
+    #Project h1{
+      text-align: center;
+    }
+    #Project h2{
+      text-align: center;
+    }
+    #Project p{
+      text-align: justify;
+    }
+    #specialrow {
+      border-left: 3px solid #E15F41;
+      border-right: 3px solid #E15F41;
+    }
+    .title h3 {
+      margin-top: 0;
+    }
+    .Link-Button {
+      position: relative;
+      left: 27%;
+      margin-top: 15px;
+      float: none;
+    }
+    #x1 {
+      top: 75%;
+      font-size: 12px;
+    }
+    #x {
+      top: 75%;
+    }
+    .carousel__indicator {
+      margin: 0 2.5px 20px 2.5px;
+    }
+    .section-padding {
+        padding: 35px 0;
+    }
+
+    .navbar-nav {
+        margin: 15px 0;
+    }
+
+    .navbar-brand {
+        padding: 20px 0;
+    }
+
+    .navbar-nav > li > a {
+        line-height: 0;
+    }
+
+    .nav > li > a {
+        padding: 10px 5px;
+        font-size: 11px;
+    }
+
+    .text-affect, .typed-cursor {
+        font-size: 4.5em;
+    }
+
+    .mouse-icon {
+        bottom: -320px;
+    }
+
+    .banner-area {
+        height: 600px;
+    }
+    .about-right h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .about-text p {
+        line-height: 1.7em;
+    }
+
+    .single-services {
+        margin-bottom: 30px;
+    }
+
+    .testimonial-content p {
+        font-size: 16px;
+    }
+
+    .contact-area {
+        background-position: inherit;
+    }
+    .socials a {
+        height: 35px;
+        width: 35px;
+        font-size: 16px;
+        line-height: 2;
+    }
+    .socials {
+        margin-top: 30px;
+    }
+    .single-invite p {
+        width: 90%;
+    }
+    .services-content h3 {
+        line-height: 0.9;
+    }
+    .services-content h3 {
+        line-height: 0.9;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .single-invite h2 {
+        font-size: 23px;
+        line-height: 35px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .about-right p {
+      text-align: justify;
+    }
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .section-header {
+        margin-bottom: 15%;
+    }
+
+    .section-header h2 {
+        font-size: 22px;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #E15F41;
+    }
+
+    .navbar-nav {
+        display: inherit;
+        background-color: transparent;
+    }
+
+    .navbar-nav li {
+        display: block;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .navbar-nav li:hover {
+        border-top: 3px solid #E15F41;
+        border-bottom: 3px solid #E15F41;
+    }
+    /* =================================================
+
+    .navbar-nav li::before {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 2px;
+    }
+
+    .navbar-nav li::after {
+        content: "";
+        background-color: #fff;
+        right: 0;
+        height: 100%;
+        width: 2px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    =================================================== */
+
+
+
+    .nav > li > a {
+        padding: 5px 10px;
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+        height: 350px;
+        width: 100%;
+        float: right;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 100%;
+    }
+
+    .sticky_navigation .nav li a {
+        color: #ffffff;
+    }
+
+    .mouse-icon {
+        bottom: -125px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .banner-btn a {
+        padding: 7px 20px;
+        letter-spacing: 0;
+    }
+
+    .socials {
+        text-align: center;
+        margin-top: 10%;
+    }
+    .socials li {
+        margin-right: 18px;
+    }
+
+    .socials a {
+        height: 35px;
+        width: 35px;
+        line-height: 2;
+        text-align: center;
+    }
+    .about-left {
+        box-shadow: none;
+    }
+    .about-right h1 {
+        border-left: none;
+        padding-left: 0;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .single-services {
+        margin-bottom: 30px;
+    }
+
+    .timeline::after {
+        margin-left: -33px;
+    }
+    .wrapper {
+        padding-left: 25px;
+        padding-right: 10px;
+    }
+    .wrapper::before {
+        left: 11px;
+        border: medium solid #000000;
+        border-color: transparent #000000 transparent transparent;
+    }
+    #resume h4 {
+        line-height: 25px;
+    }
+    #resume h5 {
+        margin-top: 15px;
+    }
+    .right::before {
+        border-width: 15px 15px 15px 0;
+    }
+    .wrapper::after {
+        top: 25px;
+    }
+
+    .single-testimonial {
+        margin: 0px 0px 30px 0px;
+    }
+
+    .testimonial-content p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    .contact-area .form-control {
+        font-size: 11px;
+    }
+
+    .contact-area {
+        background-position: inherit;
+    }
+
+    .single-invite h2 {
+        font-size: 18px;
+    }
+    .single-invite p {
+        width: 90%;
+    }
+    .gallery-items {
+        margin-bottom: 15px;
+    }
+    .welcome-text h2 {
+        font-size: 1.5em;
+    }
+    .text-affect, .typed-cursor {
+        font-size: 1.5em;
+    }
+
+    .timeline::after {
+        margin-left: -2px;
+    }
+    .single-invite h2 {
+        width: 90%;
+        margin: 0 auto 10px;
+    }
+
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #Carousel{
+    height: 500px;
+  }
+  #Project{
+    margin: 0 0 10px 0;
+  }
+  #Tech{
+    margin: 0 0 10px 0;
+    border: none;
+  }
+  #Project h1{
+    text-align: center;
+  }
+  #Project h2{
+    text-align: center;
+  }
+  #specialrow {
+    border-left: 3px solid #E15F41;
+    border-right: 3px solid #E15F41;
+  }
+  .title h3 {
+    margin-top: 0;
+  }
+  .fa-ul > li {
+    font-size: 15px;
+    line-height: 2em;
+    margin: 5px 0 5px 0px;
+    display: block;
+    float: left;
+  }
+  .Link-Button {
+    position: relative;
+    left: 27%;
+    margin-top: 15px;
+    float: none;
+  }
+  #x1 {
+    top: 75%;
+    font-size: 12px;
+  }
+  #x {
+    top: 75%;
+  }
+  .carousel__indicator {
+    margin: 0 2.5px 20px 2.5px;
+  }
+    .text-affect, .typed-cursor {
+        font-size: 1.5em;
+    }
+
+    .single-portfolio img {
+        width: 100%;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #E15F41;
+    }
+
+    .mouse-icon {
+        bottom: -300px;
+    }
+
+    .contact-area {
+        background-position: inherit;
+    }
+}
+
+
+@media only screen and (min-width: 319px) and (max-width: 767px){
+  #Carousel{
+    height: 500px;
+  }
+  #Project{
+    margin: 0 0 10px 0;
+  }
+  #Tech{
+    margin: 0 0 10px 0;
+    border: none;
+  }
+  #Project h1{
+    text-align: center;
+    font-size: 24px;
+  }
+  #Project h2{
+    text-align: center;
+    font-size: 24px;
+  }
+  #Project p{
+    text-align: justify;
+  }
+  #specialrow {
+    border-left: 3px solid #E15F41;
+    border-right: 3px solid #E15F41;
+  }
+  .title h3 {
+    margin-top: 0;
+  }
+  .fa-ul > li {
+    font-size: 15px;
+    line-height: 2em;
+    margin: 5px 0 5px 0px;
+    display: block;
+    float: left;
+  }
+  .Link-Button {
+    position: relative;
+    margin: 0 auto;
+    align-self: center;
+    margin-top: 15px;
+    float: none;
+  }
+  #x1 {
+    top: 75%;
+    font-size: 12px;
+  }
+  #x {
+    top: 75%;
+  }
+  .carousel__indicator {
+    margin: 0 2.5px 20px 2.5px;
+  }
+  .Front-End {
+    margin-left: 0;
+  }
+  .Back-End {
+    margin-left: 0;
+  }
+  .fa-ul {
+    margin-left: 0;
+  }
+  .fa-ul > li {
+    font-size: 14px;
+  }
+  .text-affect, .typed-cursor {
+      font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 767px){
+    .text-affect, .typed-cursor {
+        font-size: 2.5em;
+    }
+}
+
+
+@media screen and (min-width: 600px){
+    .section-header h2 {
+        font-size: 26px;
+    }
+    .text-affect, .typed-cursor {
+        font-size: 3.5em;
+    }
+    .welcome-text h2 {
+        font-size: 3em;
+    }
+    .about-left img {
+        width: 100%;
+    }
+    .socials {
+        text-align: left;
+        margin-top: 45px;
+    }
+    .gallery-text h2 {
+        font-size: 20px;
+    }
+
+    .single-portfolio {
+        text-align: center;
+    }
+
+}
