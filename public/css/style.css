@@ -42,7 +42,6 @@ body{
     line-height: 1.7;
     color: #333333;
     font-weight: 400;
-    overflow-x: hidden;
 }
 
 h1,
@@ -420,6 +419,10 @@ canvas{
     -webkit-box-shadow: 10px 10px 1px #c6c6c6,20px 20px 1px #dddddd;
     -moz-box-shadow: 10px 10px 1px #c6c6c6,20px 20px 1px #dddddd;
     box-shadow: 10px 10px 1px #c6c6c6,20px 20px 1px #dddddd;
+    background-image: url("../images/about/ProfilePic2.1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .about-right {
     padding: 2% 5%;
@@ -1725,5 +1728,30 @@ a.svg:after {
 #ClickMe:hover{
   color: #E15F41;
   text-decoration: line-through;
+}
+
+/*--------------- Random minor stuff ends -------------*/
+
+/*--------------15. SCrollbar starts -------------*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #E15F41;
 }
 /*--------------- Random minor stuff ends -------------*/

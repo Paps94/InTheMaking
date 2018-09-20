@@ -47,15 +47,16 @@
     <!--navigation area starts-->
 
     <header class="nav-area navbar-fixed-top">
-        <div class="container">
+        <div id="special" class="container">
             <div class="row">
                 <!--main menu starts-->
 
                 <div class="col-md-12">
                     <div class="main-menu">
                         <div class="navbar navbar-cus">
+
                             <div class="navbar-header">
-                                <a href="/" class="navbar-brand">Antreas</a>
+                                <a href="/" class="navbar-brand">Logo</a>
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -124,15 +125,15 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-5 col-md-5">
                     <div class="about-left wow fadeInDown" data-wow-delay="0.4s">
-                        <img src="{{ asset('images/about/background.jpg') }}" alt="A pretty face">
+                        <img src="{{ asset('images/about/ProfilePic2.1.jpg') }}" alt="A pretty face">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-7 col-md-7">
                     <div class="about-right wow fadeInDown" data-wow-delay="0.8s">
                         <h1>Hi, I'm <span class="text-primary">Antreas Papadopoulos</span> and I'm a Junior Web Developer</h1>
-                        <p>I'm a 23 year-old  <a id="ClickMe" href="https://giphy.com/gifs/Cz6TlrRVVyv9S" target="_blank">Computer Science graduate</a>. Ever since graduation I have been wokring on personal projects which include
+                        <p>I'm a 23 year-old  <a id="ClickMe" href="https://giphy.com/gifs/Cz6TlrRVVyv9S" target="_blank">Computer Science graduate</a>. Ever since graduation I have been working on personal projects which include
                           a decentralized web app called <span class="text-primary">Balloo</span> as part of my dissertation and this personal website of mine. I have a decent knowledge
-                           in <span class="text-primary">HTML, Css, PHP, Laravel (PHP framewok)</span> and I have been looking more into Javascript and JQuery. I always strive to create high quality, fully responsive, and tested services
+                           in <span class="text-primary">HTML, Css, PHP, Laravel (PHP framewok)</span> and I have been looking more into Javascript and JQuery. I always strive to create high quality, fully responsive Fand tested services
                            in a wide range of devices.</p>
                     </div>
                 </div>
@@ -267,7 +268,7 @@
                             <i class="fa fa-pencil"></i>
                         </div>
                         <div class="services-content">
-                            <h3>Graphics Design</h3>
+                            <h3>Vector Design</h3>
                             <p>This is my latest interest - Scalable Vector Graphics (SVG). I have been messing around Adobe Illustrator and AfterEffects in an attempt to only use vectors in my websites </p>
                         </div>
                     </div>
@@ -279,7 +280,7 @@
                         </div>
                         <div class="services-content">
                             <h3>Back-End Development</h3>
-                            <p>Yes I did technically mention (literally above) that I am a front-end guy but sometimes, just sometimes, I wished I never touched these stuff and turned my focus on the back-end. Hence why I started learning Laravel and developing my projects there</p>
+                            <p>Yes I did technically mention (literally above) that I am a front-end guy but sometimes, just sometimes, I wished I never touched this stuff and turned my focus on the back-end. Hence why I started learning Laravel and developing my projects there</p>
                         </div>
                     </div>
                 </div>
@@ -324,7 +325,7 @@
                 <h3>Current State:</h3>
                 <p>The application is still under development <span class="text-primary">(STRICTLY FOR EDUCATIONAL PURPOSES).</span> I have been waiting on some well known connectivity bugs to be fixed by the Ethereum developers (like some event handling).</p>
                 <h3>Future plans:</h3>
-                <p>After that, I aim to re-structure the database and make it more of a platform for both Landlords and Tenants to use. That includes (1)private chat rooms between parties.
+                <p>After that, I aim to re-structure the database and make it more of a platform for both landlords and tenants to use. That includes (1)private chat rooms between parties.
                  (2)A dashboard that adds functionality like time remaining before the next rent payment, wallet account balance and others. (3)More customization on the smart contracts. (4)Link of Dapp
                 with smart house readers for even more automation. (5) Rating system for the users.</p>
                 <div class="Link-Button">
@@ -499,7 +500,7 @@
                 <div class="col-sm-4 col-md-6 col-lg-4">
                     <div class="gallery-items wow fadeInDown" data-wow-delay="0.4s">
                         <a class="view img" href="images/portfolio/2.png">
-                          <img src="{{ asset('images/SVGs/InTheMakingAttempt2.svg') }}" alt="Nights like this">
+                          <img src="{{ asset('images/SVGs/cs.jpg') }}" alt="Nights like this">
                         </a>
 
                         <div class="gallery-text">
@@ -510,7 +511,7 @@
                 <div class="col-sm-4 col-md-6 col-lg-4">
                     <div class="gallery-items wow fadeInRight" data-wow-delay="0.6s">
                         <a class="view img" href="images/portfolio/3.png">
-                          <img src="{{ asset('images/SVGs/InTheMakingAttempt2.svg') }}" alt="City by Night">
+                          <img src="{{ asset('images/SVGs/cs.jpg')  }}" alt="City by Night">
                         </a>
 
                         <div class="gallery-text">
@@ -717,7 +718,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                    <p>Thank you for your time and if it's not too much to ask drop me an <a href="mailto:antreas.paps@yahoo.com?Subject=Feedback%20Timeeee%20Woooooooooo" target="_top"><span class="primary-text">email</span></a> and give me some feedback :) </p>
+                    <p><i class="fa fa-copyright" style="padding: 0 5px;"></i>All Rights Reserved <i class="fa fa-copyright" style="padding-right: 5px;"></i></p>
                 </div>
             </div>
         </div>
