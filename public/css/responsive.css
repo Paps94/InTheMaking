@@ -537,6 +537,12 @@ NB: This is the responsive stylesheet of this theme.
   .carousel__indicator {
     display: none;
   }
+
+  .libraries {
+    position: absolute;
+    color: #557a95;
+    font-size: 20px;
+  }
 }
 
 

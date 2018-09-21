@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     $(function(){
        libraries.typed({
-           strings: ["-> Bootstrap.", "-> JQuery.", "-> Particles.js.", "-> Type.js.", "-> Owl Carousel.js.", "-> Anime.js.", "-> Font Awesome Icons."],
+           strings: ["> Bootstrap.", "> JQuery.", "> Particles.js.", "> Type.js.", "> Owl Carousel.js.", "> Anime.js.", "> Font Awesome Icons."],
            smartBackspace: true,
            loop: true,
            typeSpeed: 100,

@@ -476,8 +476,9 @@ canvas{
 }
 
 .libraries {
-  position: relative;
+  position: absolute;
   color: #557a95;
+  font-size: 30px;
 }
 
 
