@@ -30,7 +30,7 @@
 				</div>
         <h6 id="titles">Subject</h6>
         <div class="detailWrap">
-					<input class="detailWrapInfo form-control" type="text" name="subject" placeholder="e.g.  I WANT TO HIRE YOU">
+					<input class="detailWrapInfo form-control" type="text" name="subject" placeholder="e.g.  This has to be the most unprofessional portfolio I have ever seen">
 					<span class="focus-detailWrapInfo"></span>
 				</div>
         <h6 id="titles">Description</h6>

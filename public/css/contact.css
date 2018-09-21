@@ -128,7 +128,7 @@ iframe {
   display: block;
   font-family: 'Montserrat';
   font-size: 18px;
-  color: #E15F41;
+  color: #557a95;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 5px;
@@ -189,7 +189,7 @@ textarea.detailWrapInfo {
   top: -1px;
   left: -1px;
   pointer-events: none;
-  border: 2px solid #E15F41;
+  border: 2px solid #557a95;
   visibility: hidden;
   opacity: 0;
 
@@ -285,7 +285,7 @@ textarea.detailWrapInfo {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
   border-radius: 31px;
-  background-color: #E15F41;
+  background-color: #557a95;
   pointer-events: none;
 
   -webkit-transition: all 0.4s;
@@ -295,7 +295,7 @@ textarea.detailWrapInfo {
 }
 
 .submitButton:hover:before {
-  background-color: #E15F41;
+  background-color: #557a95;
   width: calc(100% + 50px);
 }
 
@@ -303,9 +303,9 @@ textarea.detailWrapInfo {
 	position: absolute;
 	left: 0;
 	top: 0;
-	border: 3px solid #E15F41;
+	border: 3px solid #557a95;
 	border-radius: 31px;
-	background-color: #E15F41;
+	background-color: #557a95;
 	margin: 20px;
 	padding: 20px 15px;
 }
@@ -330,7 +330,7 @@ textarea.detailWrapInfo {
 }
 
 .fa-arrow-left:hover {
-	color: #E15F41;
+	color: #557a95;
 	-webkit-animation: move 1000ms infinite; /* Safari 4+ */
   -moz-animation:    move 1000ms infinite; /* Fx 5+ */
   -o-animation:      move 1000ms infinite; /* Opera 12+ */

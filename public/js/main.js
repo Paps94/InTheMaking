@@ -14,8 +14,29 @@ $(document).ready(function () {
        element.typed({
            strings: ["Junior Web Developer.", "Junior Graphic Designer.", "Wannabe Blockchain Developer.", "Unemployed :D"],
            loop: true,
-           typeSpeed: 90
+           typeSpeed: 100,
+           backSpeed: 50,
+           smartBackspace: true,
+           backDelay: 1000,
        });
+
+
+    });
+
+    var libraries = $(".libraries");
+
+    $(function(){
+       libraries.typed({
+           strings: ["-> Bootstrap.", "-> JQuery.", "-> Particles.js.", "-> Type.js.", "-> Owl Carousel.js.", "-> Anime.js.", "-> Font Awesome Icons."],
+           smartBackspace: true,
+           loop: true,
+           typeSpeed: 100,
+           backSpeed: 50,
+           backDelay: 1000,
+           showCursor: false,
+       });
+
+
     });
 
     //*********wow js

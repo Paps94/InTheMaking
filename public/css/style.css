@@ -40,7 +40,7 @@ body{
     height: 100%;
     font-size: 15px;
     line-height: 1.7;
-    color: #333333;
+    color: #5d5c61;
     font-weight: 400;
 }
 
@@ -50,7 +50,7 @@ h3,
 h4,
 h5,
 h6{
-    color: #333333;
+    color: #5d5c61;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -103,14 +103,14 @@ img {
 .section-header .line1 {
     height: 2px;
     width: 200px;
-    background: #E15F41;
+    background: #557a95;
     margin: auto;
 }
 
 .section-header .line2 {
     height: 2px;
     width: 150px;
-    background: #222222;
+    background: #5d5c61;
     margin: 15px auto;
 }
 
@@ -138,7 +138,7 @@ img {
 
 .loader:before, .loader:after {
     content: '';
-    border: 1em solid #E15F41;
+    border: 1em solid #557a95;
     border-radius: 50%;
     width: inherit;
     height: inherit;
@@ -193,23 +193,23 @@ img {
 }
 
 .sticky_navigation .navbar-brand, .sticky_navigation .navbar-brand span {
-    color: #E15F41;
+    color: #557a95;
 }
 
 .sticky_navigation .navbar-brand:hover, .sticky_navigation .navbar-brand:focus, .sticky_navigation .navbar-brand span {
-    color: #E15F41;
+    color: #557a95;
 }
 
 .sticky_navigation .nav li a {
-    color: #333333;
+    color: #5d5c61;
 }
 
 .sticky_navigation .nav li.active a{
-    color: #E15F41;
+    color: #557a95;
 }
 
 .sticky_navigation .navbar-brand:hover{
-    color: #333333;
+    color: #5d5c61;
 }
 
 .main-menu{
@@ -252,12 +252,12 @@ img {
 }
 
 .navbar-right li a:hover{
-    color: #E15F41;
+    color: #557a95;
 }
 
 .navbar-right li.active a{
     font-weight: bold;
-    color: #E15F41;
+    color: #557a95;
 }
 
 .nav > li > a {
@@ -356,8 +356,8 @@ img {
 }
 
 .welcome-text h2{
-    font-size: 2.8em;
-    font-weight: 300;
+    font-size: 2.5em;
+    font-weight: 700;
     color: #ffffff;
 }
 
@@ -394,7 +394,7 @@ canvas{
 }
 
 .banner-btn a {
-    background-color: #E15F41;
+    background-color: #557a95;
     color: #ffffff;
     padding: 10px 35px;
     display: inline-block;
@@ -428,59 +428,19 @@ canvas{
     padding: 2% 5%;
 }
 .about-right h1 {
-    border-left: 3px solid #E15F41;
+    border-left: 3px solid #557a95;
     padding-left: 15px;
     font-size: 30px;
     line-height:40px;
 }
 .text-primary {
-    color: #E15F41;
-}
-.socials {
-    margin-top: 5%;
-}
-.socials li {
-    display: inline-block;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    margin-right: 25px;
-}
-.socials a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    font-size: 16px;
-    color: #222222;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-    border: 2px solid #222222;
-    background: transparent;
-    line-height: 2.5;
-    text-align: center;
-}
-.socials a:hover{
-    background: #222222;
-    color: #ffffff;
-}
-
-.socials a i{
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    color: #557a95;
 }
 
 .face-button {
   height: 44px;
   display: inline-block;
-  border: 3px solid #E15F41;
+  border: 3px solid #557a95;
   border-radius: 5px;
   font-size: 20px;
   font-weight: 500;
@@ -499,7 +459,7 @@ canvas{
   padding: 0 12px;
   line-height: 44px;
   background-color: #fff;
-  color: #222222;
+  color: #5d5c61;
   text-decoration: none;
   transition: margin .4s;
 }
@@ -509,11 +469,17 @@ canvas{
 
 .face-button .face-primary {
   background-color: #fff;
-  color: #222222;
+  color: #5d5c61;
 }
 .face-button:hover .face-primary {
   margin-top: -44px;
 }
+
+.libraries {
+  position: relative;
+  color: #557a95;
+}
+
 
 /*------- 7. Resume area css starts -------*/
 
@@ -556,7 +522,7 @@ canvas{
     height: 25px;
     right: -17px;
     background-color: white;
-    border: 4px solid #E15F41;
+    border: 4px solid #557a95;
     top: 20px;
     border-radius: 50%;
     z-index: 1;
@@ -601,7 +567,7 @@ canvas{
 
 #resume h3 {
     font-size: 15px;
-    color: #E15F41;
+    color: #557a95;
     margin: 10px auto;
     text-transform: uppercase;
 }
@@ -646,13 +612,13 @@ canvas{
 }
 
 .services-icon {
-    border: 1px solid #E15F41;
+    border: 1px solid #557a95;
     display: inline-block;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     padding: 20px;
-    background-color: #E15F41;
+    background-color: #557a95;
 }
 
 .single-services {
@@ -672,15 +638,15 @@ canvas{
 .single-services:hover .services-icon{
     background-color: #ffffff;
     transition: ease .3s;
-    border-color: #E15F41;
+    border-color: #557a95;
 }
 
 .single-services:hover .services-icon i{
-    color: #E15F41;
+    color: #557a95;
 }
 
 .single-services:hover{
-    background-color: #E15F41;
+    background-color: #557a95;
     -webkit-transition: .9s;
     -moz-transition: .9s ;
     -ms-transition: .9s ;
@@ -699,15 +665,15 @@ canvas{
 /*--------------9. Projects area starts-----------*/
 
 #Project {
-  border-left: 3px solid #E15F41;
-  border-right: 3px solid #E15F41;
+  border-left: 3px solid #557a95;
+  border-right: 3px solid #557a95;
   padding: 1em;
   margin: 30px 0;
 }
 
 #Tech {
-  border-left: 3px solid #E15F41;
-  border-right: 3px solid #E15F41;
+  border-left: 3px solid #557a95;
+  border-right: 3px solid #557a95;
   padding: 1em;
   margin: 30px 0;
 }
@@ -716,8 +682,8 @@ canvas{
   padding: 1em;
   margin: 10px 0;
   height: 700px;
-  border-top: 3px solid #E15F41;
-  border-bottom: 3px solid #E15F41;
+  border-top: 3px solid #557a95;
+  border-bottom: 3px solid #557a95;
 }
 .Front-End {
   float: left;
@@ -737,7 +703,7 @@ canvas{
 .button {
   display: inline-block;
   border-radius: 4px;
-  background-color: #E15F41;
+  background-color: #557a95;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -794,6 +760,11 @@ canvas{
   margin-top: 0;
 }
 
+.svgIMGS{
+  height: 40px;
+  width: 40px;
+}
+
 .fa-ul {
   display: block;
 
@@ -845,7 +816,7 @@ canvas{
 #x1 {
   font-size: 14px;
   line-height: 20px;
-  color: #222222;
+  color: #5d5c61;
   position: absolute;
   top: 83%;
   width: 100%;
@@ -1112,7 +1083,7 @@ canvas{
   cursor: pointer;
   border-width: 5px 5px 0 0;
   border-style: solid;
-  border-color: #E15F41;
+  border-color: #557a95;
   opacity: 0.35;
   outline: 0;
   z-index: 3;
@@ -1340,7 +1311,7 @@ canvas{
 /*--------------10. Portfolio area starts-----------*/
 
 #portfolio h1 {
-    /border-left: 3px solid #E94E63;
+    /border-left: 3px solid #b1a296;
     padding-left: 15px;
     font-size: 30px;
 }
@@ -1365,7 +1336,7 @@ canvas{
     bottom: 0;
     left: 0;
     background: rgba(255,255,255,0.8);
-    color: #E94E63;
+    color: #b1a296;
     opacity: 0;
     -webkit-transition: .7s;
     -moz-transition: .7s;
@@ -1431,7 +1402,7 @@ canvas{
 }
 
 .gallery-text h2 {
-    color: #E94E63;
+    color: #b1a296;
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1475,18 +1446,18 @@ a.svg:after {
 
 .single-testimonial {
     margin: 0 49px 29px;
-    border-right: 5px solid #E15F41;
-    border-left: 5px solid #E15F41;
+    border-right: 5px solid #557a95;
+    border-left: 5px solid #557a95;
     padding: 40px 30px 40px;
     position: relative;
     background-color: #eeeeee;
-    color: #010446;
+    color: #5d5c61;
     text-align: center;
 }
 
 .single-testimonial::before {
     content: "";
-    background-color: #E15F41;
+    background-color: #557a95;
     position: absolute;
     top: 0;
     left: 0;
@@ -1496,7 +1467,7 @@ a.svg:after {
 
 .single-testimonial::after {
     content: "";
-    background-color: #E15F41;
+    background-color: #557a95;
     right: 0;
     width: 50%;
     height: 5px;
@@ -1541,14 +1512,14 @@ a.svg:after {
     display: inline-block;
     height: 15px !important;
     width: 15px !important;
-    background-color: #222222 !important;
+    background-color: #5d5c61 !important;
     opacity: 0.8;
     border-radius: 50%;
     margin: 0 5px;
 }
 
 .owl-dot.active {
-    background-color: #E15F41 !important;
+    background-color: #557a95 !important;
 }
 
 /*------------ Testimonial area ends ---------*/
@@ -1556,7 +1527,7 @@ a.svg:after {
 /*------- 12. Invitation area starts------*/
 
 .invitation-area {
-    background: #333333;
+    background: #5d5c61;
     color: #ffffff;
 }
 .single-invite h2 {
@@ -1577,7 +1548,7 @@ a.svg:after {
     color: #fff;
     padding: 10px 20px;
     text-transform: uppercase;
-    background: #E15F41;
+    background: #557a95;
     margin-top: 20px;
     border-radius: 30px;
     margin-left: 5px;
@@ -1615,7 +1586,7 @@ a.svg:after {
 }
 
 .btn.btn-send {
-    background-color: #E15F41;
+    background-color: #557a95;
     color: #ffffff;
     padding: 10px 35px;
     display: inline-block;
@@ -1656,20 +1627,20 @@ a.svg:after {
     height: 40px;
     width: 40px;
     font-size: 16px;
-    color: #222222;
+    color: #5d5c61;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    border: 2px solid #222222;
+    border: 2px solid #5d5c61;
     background: transparent;
     line-height: 2.5;
     text-align: center;
 }
 
 .contact-icon a:hover{
-    background: #222222;
+    background: #5d5c61;
     color: #ffffff;
 }
 
@@ -1714,7 +1685,7 @@ a.svg:after {
     padding: 30px 0;
 }
 .footer-area a{
-    color: #E15F41;
+    color: #557a95;
 }
 
 /*--------------- Footer area ends -------------*/
@@ -1722,12 +1693,34 @@ a.svg:after {
 /*--------------14. Random minor stuff starts -------------*/
 
 #ClickMe {
-  color: #333333;
+  color: #5d5c61;
 }
 
 #ClickMe:hover{
-  color: #E15F41;
+  color: #557a95;
   text-decoration: line-through;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 1.5s infinite;
+    -moz-animation: blink 1.5s infinite;
+    animation: blink 1.5s infinite;
+}
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 /*--------------- Random minor stuff ends -------------*/
@@ -1735,7 +1728,7 @@ a.svg:after {
 /*--------------15. SCrollbar starts -------------*/
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 20px;
 }
 
 /* Track */
@@ -1746,12 +1739,12 @@ a.svg:after {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: grey;
+    background: #557a95;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #E15F41;
+    background: #7395ae;
 }
 /*--------------- Random minor stuff ends -------------*/

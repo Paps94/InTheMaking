@@ -50,11 +50,18 @@ NB: This is the responsive stylesheet of this theme.
       margin: 0 2.5px 30px 2.5px;
     }
     #specialrow {
-      border-left: 3px solid #E15F41;
-      border-right: 3px solid #E15F41;
+      border-left: 3px solid #557a95;
+      border-right: 3px solid #557a95;
     }
     .banner-area {
         height: 100%;
+    }
+    .text-affect,
+    .typed-cursor {
+        display: inline;
+        font-size: 3em;
+        font-weight: 700;
+        color: #ffffff;
     }
 }
 
@@ -63,6 +70,7 @@ NB: This is the responsive stylesheet of this theme.
     .about-right p {
       text-align: justify;
     }
+
     #Carousel{
       height: 500px;
     }
@@ -83,8 +91,8 @@ NB: This is the responsive stylesheet of this theme.
       text-align: justify;
     }
     #specialrow {
-      border-left: 3px solid #E15F41;
-      border-right: 3px solid #E15F41;
+      border-left: 3px solid #557a95;
+      border-right: 3px solid #557a95;
     }
     .title h3 {
       margin-top: 0;
@@ -181,6 +189,13 @@ NB: This is the responsive stylesheet of this theme.
         font-size: 23px;
         line-height: 35px;
     }
+    .text-affect,
+    .typed-cursor {
+        display: inline;
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #ffffff;
+    }
 }
 
 /* Mobile Layout: 320px. */
@@ -201,7 +216,7 @@ NB: This is the responsive stylesheet of this theme.
     }
 
     .navbar-toggle .icon-bar {
-        background: #E15F41;
+        background: #557a95;
     }
 
     .navbar-nav {
@@ -216,8 +231,8 @@ NB: This is the responsive stylesheet of this theme.
     }
 
     .navbar-nav li:hover {
-        border-top: 3px solid #E15F41;
-        border-bottom: 3px solid #E15F41;
+        border-top: 3px solid #557a95;
+        border-bottom: 3px solid #557a95;
     }
     /* =================================================
 
@@ -293,12 +308,6 @@ NB: This is the responsive stylesheet of this theme.
     }
     .about-left {
         box-shadow: none;
-    }
-    .about-right h1 {
-        border-left: none;
-        padding-left: 0;
-        font-size: 18px;
-        line-height: 30px;
     }
 
     .single-services {
@@ -392,8 +401,8 @@ NB: This is the responsive stylesheet of this theme.
     text-align: center;
   }
   #specialrow {
-    border-left: 3px solid #E15F41;
-    border-right: 3px solid #E15F41;
+    border-left: 3px solid #557a95;
+    border-right: 3px solid #557a95;
   }
   .title h3 {
     margin-top: 0;
@@ -422,7 +431,7 @@ NB: This is the responsive stylesheet of this theme.
     margin: 0 2.5px 20px 2.5px;
   }
     .text-affect, .typed-cursor {
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     .single-portfolio img {
@@ -430,7 +439,7 @@ NB: This is the responsive stylesheet of this theme.
     }
 
     .navbar-toggle .icon-bar {
-        background: #E15F41;
+        background: #557a95;
     }
 
     .mouse-icon {
@@ -440,13 +449,17 @@ NB: This is the responsive stylesheet of this theme.
     .contact-area {
         background-position: inherit;
     }
-}
-.text-affect, .typed-cursor {
-    font-size: 2.5em;
+    .about-right h1 {
+        border-left: none;
+        padding-left: 0;
+        font-size: 35px;
+        line-height: 30px;
+    }
 }
 
 
-@media only screen and (min-width: 319px) and (max-width: 767px){
+
+@media only screen and (min-width: 319px) and (max-width: 479px){
   #Carousel{
     height: 500px;
   }
@@ -469,8 +482,8 @@ NB: This is the responsive stylesheet of this theme.
     text-align: justify;
   }
   #specialrow {
-    border-left: 3px solid #E15F41;
-    border-right: 3px solid #E15F41;
+    border-left: 3px solid #557a95;
+    border-right: 3px solid #557a95;
   }
   .title h3 {
     margin-top: 0;
@@ -514,15 +527,22 @@ NB: This is the responsive stylesheet of this theme.
   .text-affect, .typed-cursor {
       font-size: 2em;
   }
+  .about-right h1 {
+      border-left: 3px solid #557a95;
+      padding-left: 15px;
+      font-size: 20px;
+      line-height: 30px;
+  }
+
+  .carousel__indicator {
+    display: none;
+  }
 }
 
 
 @media screen and (min-width: 600px){
     .section-header h2 {
         font-size: 26px;
-    }
-    .welcome-text h2 {
-        font-size: 3em;
     }
     .about-left img {
         width: 100%;
@@ -540,7 +560,7 @@ NB: This is the responsive stylesheet of this theme.
     }
 
 }
-
+/* This messes with the sticky navbar but it fixes the x overflow from landscape orientation */
 @media only screen and (min-width: 460px) and (max-width: 800px) and (orientation: landscape) {
 
   html,body{

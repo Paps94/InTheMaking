@@ -24,12 +24,6 @@
 <!--particle js-->
 <script type="text/javascript" src="{{ URL::asset('js/particles.js') }}"></script>
 
-<!--Validator js-->
-<script type="text/javascript" src="{{ URL::asset('js/validator.js') }}"></script>
-
-<!--Contact js-->
-<script type="text/javascript" src="{{ URL::asset('js/contact.js') }}"></script>
-
 <!--Main js-->
 <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
 
@@ -56,7 +50,7 @@
                         <div class="navbar navbar-cus">
 
                             <div class="navbar-header">
-                                <a href="/" class="navbar-brand">Logo</a>
+                                <a href="/" class="navbar-brand">#Logo</a>
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -130,12 +124,19 @@
                 </div>
                 <div class="col-xs-12 col-sm-7 col-md-7">
                     <div class="about-right wow fadeInDown" data-wow-delay="0.8s">
-                        <h1>Hi, I'm <span class="text-primary">Antreas Papadopoulos</span> and I'm a Junior Web Developer</h1>
-                        <p>I'm a 23 year-old  <a id="ClickMe" href="https://giphy.com/gifs/Cz6TlrRVVyv9S" target="_blank">Computer Science graduate</a>. Ever since graduation I have been working on personal projects which include
-                          a decentralized web app called <span class="text-primary">Balloo</span> as part of my dissertation and this personal website of mine. I have a decent knowledge
-                           in <span class="text-primary">HTML, Css, PHP, Laravel (PHP framewok)</span> and I have been looking more into Javascript and JQuery. I always strive to create high quality, fully responsive Fand tested services
-                           in a wide range of devices.</p>
+                        <h1>Hi, I'm <span class="text-primary">Antreas Papadopoulos</span></h1>
+                        <p>I'm a 23 year-old  <a id="ClickMe" href="https://giphy.com/gifs/Cz6TlrRVVyv9S" target="_blank">Computer Science graduate</a>. Ever since graduation I have been working
+                          on personal projects which include a decentralized web app called <span class="text-primary">Balloo</span> as part of my dissertation and this personal website of mine.
+                           I have a decent knowledge in <span class="text-primary">HTML, Css, PHP, Laravel (PHP framewok)</span> and I have been looking more into Javascript and JQuery.
+                        </p>
+                         <p>Although I don't have any knowledge when it comes to mobile application development, I always strive to create high quality, fully responsive and tested services in a wide range
+                            of devices, even though browser support can be a nightmare on a daily basis!
+                         </p>
+                         <p>As a programmer I tend to use a variety of libraries and toolkits(everything being MIT licensed) to aid me in my final result instead of making my own implementaions from scratch;
+                           no point to reinvent the wheel now is it? In this project some examples would be: <br> <span class="libraries"></span> <br>
+                         </p>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -325,11 +326,11 @@
                 <h3>Current State:</h3>
                 <p>The application is still under development <span class="text-primary">(STRICTLY FOR EDUCATIONAL PURPOSES).</span> I have been waiting on some well known connectivity bugs to be fixed by the Ethereum developers (like some event handling).</p>
                 <h3>Future plans:</h3>
-                <p>After that, I aim to re-structure the database and make it more of a platform for both landlords and tenants to use. That includes (1)private chat rooms between parties.
+                <p>I aim to re-structure the database and make it more of a platform for both landlords and tenants to use. That includes (1)private chat rooms between parties.
                  (2)A dashboard that adds functionality like time remaining before the next rent payment, wallet account balance and others. (3)More customization on the smart contracts. (4)Link of Dapp
                 with smart house readers for even more automation. (5) Rating system for the users.</p>
                 <div class="Link-Button">
-                  <a href="http://www.balloo.tech" target="_blank"><button class="button btn-lg" style="vertical-align:middle"><span>Visit Baloo</span></button></a>
+                  <a href="http://www.balloo.tech" target="_blank"><button class="button btn-lg" style="vertical-align:middle"><span>Visit Balloo</span></button></a>
                 </div>
               </div>
               <div id="Carousel" class="col-lg-12">
@@ -460,7 +461,7 @@
                     <li><img src="{{ asset('images/portfolio/icons/php.svg') }}" class="svgIMG1"/>PHP</li>
                     <li><img src="{{ asset('images/portfolio/icons/jquery.svg') }}" class="svgIMG1"/>JQuery</li>
                     <li><img src="{{ asset('images/portfolio/icons/phpmyadmin.svg') }}" class="svgIMG1"/>phpMyAdmin</li>
-                    <li><img src="{{ asset('images/portfolio/icons/solidity.svg') }}" class="svgIMG"/>Solidity</li>
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Solidity_logo.svg" class="svgIMGS"/>Solidity</li>
                   </ul>
                 </div>
               </div>
@@ -545,7 +546,7 @@
                 <div id="testimonial-slider" class="owl-carousel">
                     <div class="single-testimonial">
                         <div class="testimonial-content">
-                            <p>"Lying to him that he will find a job soon is bad enough but I can't keep up the financial support untill he finds one!"</p>
+                            <p>"Lying to him that he will find a job soon is bad enough but I can't keep up the financial support until he finds one!"</p>
                         </div>
                         <div class="pic">
                             <img src="images/testimonial/philippepotey.jpg" alt="testimonial image">
@@ -739,6 +740,11 @@
               $('.nav li').removeClass('active');
               $(this).addClass('active');
           });
+
+          $('.nav a').on('click', function(){
+            $('.navbar-toggle').click();
+
+        });
       });
 </script>
 
