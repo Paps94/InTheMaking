@@ -30,12 +30,12 @@
 
 @section('content')
     <!--preloader starts-->
-<!--
+
      <div class="loader_bg">
        <div class="loader">
        </div>
      </div>
--->
+     
     <!--preloader ends-->
 
     <!--navigation area starts-->

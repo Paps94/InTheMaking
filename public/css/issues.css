@@ -1,0 +1,55 @@
+
+.banner-area{
+    background-color: black;
+    position: relative;
+    height: 100%;
+}
+
+.banner-table{
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.header {
+  margin: 20px 0;
+  padding: 30px;
+}
+
+.welcome-text{
+    color: #ffffff;
+}
+
+.important {
+  font-size: 5em;
+  font-weight: 700;
+}
+
+.welcome-text h4{
+    font-size: 1.8em;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.main {
+  margin: 20px 0;
+  padding: 30px;
+}
+
+.welcome-text-main h4{
+    text-transform: none;
+    font-size: 1.8em;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.smily {
+  display:inline-block;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); //For IE support
+}
+
+}

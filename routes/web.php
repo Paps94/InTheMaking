@@ -37,3 +37,8 @@ Route::post('/contact', [
   'uses' => 'ContactMeController@store',
   'as' => 'contact.store'
 ]);
+
+//Display Contact page through the IssuesController and funciton 'show'
+Route::get('/issues', [
+  'uses' => 'IssuesController@show'
+]);
