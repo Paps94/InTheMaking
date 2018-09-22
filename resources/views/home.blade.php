@@ -35,7 +35,7 @@
        <div class="loader">
        </div>
      </div>
-     
+
     <!--preloader ends-->
 
     <!--navigation area starts-->
@@ -132,8 +132,8 @@
                          <p>Although I don't have any knowledge when it comes to mobile application development, I always strive to create high quality, fully responsive and tested services in a wide range
                             of devices, even though browser support can be a nightmare on a daily basis!
                          </p>
-                         <p>As a programmer I tend to use a variety of libraries and toolkits(everything being MIT licensed) to aid me in my final result instead of making my own implementaions from scratch;
-                           no point to reinvent the wheel now is it? In this project some examples would be: <br> <span class="libraries"></span> <br>
+                         <p>As a programmer, I tend to use a variety of libraries and toolkits (everything being MIT licensed) to aid me in my final result instead of making my own from scratch;
+                           no point to reinvent the wheel now is there? In this project some examples would be: <br> <span class="libraries"></span> <br>
                          </p>
                     </div>
 
