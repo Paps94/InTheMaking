@@ -14,7 +14,7 @@
 
 				{{ csrf_field() }}
 			  <span class="contactInfoComment"> Got any feedback for me? </span>
-        <span class="contactInfoComment"> Possibly a position for me? </span>
+        <span class="contactInfoComment"> Possibly a job offer :D? </span>
 				<span class="contactInfoTitle">
 					Get In Touch
 				</span>

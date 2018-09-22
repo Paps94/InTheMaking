@@ -623,7 +623,7 @@
         <div class="container">
             <div class="row">
                 <div class="single-invite text-center">
-                    <h2>do you have any project needed to be done?</h2>
+                    <h2>do you have any project i can help you with?</h2>
                     <p>Feel free to contact me if you think there is a project I can be of assistance! Drop me an email, give me a call, use the contact form, any will do!</p>
                     <a id="contactFormButton"href="/contact"><img src="{{ asset('images/portfolio/icons/browser.svg') }}" class="svgIMG1"/></i>Contact Form</a>
                 </div>
