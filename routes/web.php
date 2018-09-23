@@ -18,7 +18,7 @@ Route::get('/', function () {
 //To Download the resume
 Route::get('/download', function () {
   //PDF file is stored under public/resume/CV.pdf
-  $file= public_path(). "/resume/AntreasPapadopoulosCV.pdf";
+  $file= public_path(). "/resume/APCV.pdf";
 
   $headers = array(
             'Content-Type: application/pdf',
