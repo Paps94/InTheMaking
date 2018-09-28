@@ -559,7 +559,7 @@
 
                     <div class="single-testimonial">
                         <div class="testimonial-content">
-                            <p>"I knew Antrea for a long time.. I wish I didn't"</p>
+                            <p>"I have known Antrea for a long time.. I wish I didn't"</p>
                         </div>
                         <div class="pic">
                             <img src="images/testimonial/yuricholak.jpg" alt="testimonial image">
