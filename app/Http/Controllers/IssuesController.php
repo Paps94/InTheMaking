@@ -28,7 +28,6 @@ class IssuesController extends Controller
      */
     public function create()
     {
-        //flash()->overlay('Really?!?!?', 'More Issues??? You suck.. make me sick to my stomach!', 'error');
         flash()->gif('MEMES', 'Only way to make adding new issues to your website bareable...');
         return view('issues.create');
     }
