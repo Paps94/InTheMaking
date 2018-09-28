@@ -41,13 +41,21 @@
     <!--Responsive css-->
     <link rel="stylesheet" href="/css/responsive.css">
 
+    <!--SweetAlerts2 css-->
+    <link rel="stylesheet" href="/css/sweetalert2.css">
 
     <title>InTheMaking</title>
   </head>
   <body>
     <div class="container">
-      @include('layouts.partials._alert')
+
     </div>
     @yield('content')
   </body>
+
+  @yield('scripts.footer')
+
+  <!--SweetAlerts2 js-->
+  <script type="text/javascript" src="{{ URL::asset('js.sweetalert2.all.min.js')}}"></script>
+
 </html>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-<!--For the SVG animations js-->
+<!--JQuery-->
 <script type="text/javascript" src="{{ URL::asset('/js/jquery-3.2.1.min.js') }}"></script>
 
 <!--Bootstrap js-->
@@ -26,7 +26,6 @@
 
 <!--Main js-->
 <script type="text/javascript" src="{{ URL::asset('js/main.js') }}"></script>
-
 
 @section('content')
     <!--preloader starts-->
@@ -560,7 +559,7 @@
 
                     <div class="single-testimonial">
                         <div class="testimonial-content">
-                            <p>"I changed my mind of having children after seeing how much of a disappointment Antreas is to his parents"</p>
+                            <p>"I knew Antrea for a long time.. I wish I didn't"</p>
                         </div>
                         <div class="pic">
                             <img src="images/testimonial/yuricholak.jpg" alt="testimonial image">

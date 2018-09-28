@@ -2,9 +2,14 @@
 
 <!--Contact css-->
 <link rel="stylesheet" href="/css/contact.css">
+
+<!--SweetAlerts2 css-->
+<link rel="stylesheet" href="/css/sweetalert2.css">
+
 @section('content')
 
 <div class="contactContainer">
+	@include('layouts.partials._alert')
 		<div class="contactInfoWrap">
 			<span class="contactSymbol">
 				<img src="{{ asset('images/portfolio/icons/email.svg') }}" alt="SYMBOL-MAIL">

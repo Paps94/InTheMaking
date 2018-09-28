@@ -38,7 +38,5 @@ Route::post('/contact', [
   'as' => 'contact.store'
 ]);
 
-//Display Contact page through the IssuesController and funciton 'show'
-Route::get('/issues', [
-  'uses' => 'IssuesController@show'
-]);
+Route::resource('issues', 'IssuesController');
+Route::post('issues/{id}/photos', 'IssuesController@addPhoto');

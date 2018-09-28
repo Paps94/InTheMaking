@@ -1,16 +1,15 @@
 
 .banner-area{
-    overflow:auto;
-    background-color: black;
     position: relative;
-    height: 100%;
+    overflow: visible;
+    height: 100% !important;
 }
 
-#particles-js{
+#particles-js1{
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: #000;
+  background-color: #fff;
   background-image: url('');
   background-size: cover;
   background-position: 50% 50%;
@@ -30,13 +29,48 @@
   padding: 30px;
 }
 
+.headerSpec {
+  margin: 0;
+  padding: 0 50px;
+}
+
 .welcome-text{
     color: #ffffff;
+    margin: 0 auto !important;
 }
 
 .important {
-  font-size: 5em;
+  font-size: 10vw;
   font-weight: 700;
+  float: left;
+}
+
+#subText {
+  font-size: 2vw;
+}
+
+.btn-group-isotope {
+  font-family: 'Montserrat Alternates';
+  margin-left: -8px;
+  -webkit-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+
+.btn-group-isotope .btn {
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px 18px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  border-width: 2px;
+  letter-spacing: 0.96px;
+  margin: 5px;
+}
+
+.btn-group-isotope .btn-primary-transparent:hover {
+  background-color: #428EFE;
+  border-color: #428EFE;
 }
 
 .welcome-text h4{
@@ -70,4 +104,454 @@
   color: #fff;
   padding: 30px 20px;
   text-align: justify;
+}
+.card {
+  margin-top: 20px;
+}
+
+.thumbnail {
+  padding: 0 !important;
+  border: none !important;
+  max-width: 370px;
+  margin: 0 auto !important;
+}
+
+.thumbnail .img-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.thumbnail .img-link img {
+  max-width: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  will-change: transform;
+  width: 107%;
+  float: right;
+}
+
+.thumbnail .img-link:hover .thumbnail-price {
+  padding: 1px 50px 3px 23px;
+}
+
+.thumbnail .img-link:hover img {
+  -webkit-transform: translateX(4.5%);
+  -ms-transform: translateX(4.5%);
+  transform: translateX(4.5%);
+}
+
+.thumbnail .img-link .thumbnail-price {
+  position: absolute;
+  bottom: 24px;
+  right: -8px;
+  padding: 1px 23px 3px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #428EFE;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.thumbnail .img-link .thumbnail-price .mon {
+  font-size: 14px;
+}
+
+.thumbnail .img-link + .caption {
+  margin-top: 14px;
+}
+
+.thumbnail .caption {
+  padding: 3px;
+}
+
+.thumbnail .caption p {
+  text-align: justify;
+  line-height: 1.4;
+  margin-top: 20px;
+}
+
+.thumbnail ul.describe-1 {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+}
+
+ul.describe-1 {
+  display: inline-block;
+  padding: 0;
+  text-align: left;
+  list-style: none;
+  width: 100%;
+}
+
+.labelStyle {
+  margin: 10px 0 5px 0;
+}
+
+.thumbnail .caption h4 a {
+  color: #428EFE;
+}
+
+.thumbnail .caption h4 a:hover {
+  color: #297EFE;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card-text {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.card-footer {
+  margin-bottom: 50px;
+  background-color: rgba(51,122,183,1);
+  border-color: #2e6da4;
+}
+
+.card-group > .card {
+  margin-bottom: 0 !important;
+}
+
+.btn-warning {
+    color: #111;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+.svgIMGcard {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.deleteBtn {
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 18px !important;
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    line-height: 1 !important;
+    border-width: 2px !important;
+    letter-spacing: 0.96px;
+}
+
+.addIssue {
+  margin-left: 13px;
+}
+
+.row-45 p {
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+
+/* -------------------------- Create.balde.php --------------------------- */
+
+textarea.form-control {
+  resize: vertical; /* user can resize vertically, but width is fixed */
+  height: 300px;
+}
+
+.submitBtn {
+  font-family: 'Montserrat', sans-serif;
+  float: right;
+  margin-bottom: 50px !important;
+}
+
+
+/* -------------------------- Create.balde.php END--------------------------- */
+
+
+/* -------------------------- Show.balde.php --------------------------- */
+
+.descriptionSection {
+  border: 2px solid #cececf;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* -------------------------- Show.balde.php END--------------------------- */
+
+
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  .jumbotron {
+    padding-top: 0px;
+  }
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  .jumbotron {
+    padding-top: 0px;
+  }
+
+  .row-45 p {
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .jumbotron {
+    padding-top: 0px;
+  }
+  .jumbotron p {
+    font-size: 4vw;
+  }
+
+  .jumbotron h1 {
+    font-size: 8.7vw;
+  }
+
+  .viewbtn {
+    margin: auto;
+    width: 100%;
+    background-color: #7395ae;
+    font-weight: 700;
+    font-size: 4vw;
+    margin: 10px auto;
+  }
+
+  .viewbtn:hover {
+    background-color: #557a95;
+  }
+
+  .submitBtn {
+    margin: auto;
+    width: 100%;
+    background-color: #7395ae;
+    font-weight: 400;
+    font-size: 2vw;
+    margin-bottom: 50px !important;
+  }
+
+  .row-45 p {
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .jumbotron {
+    padding-top: 0px;
+  }
+  .jumbotron p {
+    font-size: 4vw;
+  }
+
+  .jumbotron h1 {
+    font-size: 7.5vw;
+  }
+
+  .viewbtn {
+    margin: auto;
+    width: 100%;
+    background-color: #7395ae;
+    font-weight: 400;
+    font-size: 3vw;
+    margin: 12px auto;
+  }
+
+  .viewbtn:hover {
+    background-color: #557a95;
+  }
+
+  .con {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .submitBtn {
+    margin: auto;
+    width: 100%;
+    background-color: #7395ae;
+    font-weight: 400;
+    font-size: 2vw;
+    margin-bottom: 50px !important;
+  }
+
+  .row-45 p {
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .jumbotron {
+    padding-top: 0px;
+  }
+  .jumbotron p {
+    font-size: 4vw;
+  }
+
+  .jumbotron h1 {
+    font-size: 8.7vw;
+  }
+
+  .viewbtn {
+    margin: auto;
+    width: 100%;
+    background-color: #7395ae;
+    font-weight: 400;
+    font-size: 3vw;
+    margin: 10px auto;
+  }
+
+  .viewbtn:hover {
+    background-color: #557a95;
+  }
+
+  .con {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+  .submitBtn {
+    margin: auto;
+    width: 100%;
+    background-color: #7395ae;
+    font-weight: 400;
+    margin-bottom: 50px !important;
+  }
+
+  .row-45 p {
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+
+  .card-group > .card {
+    margin-bottom: 0;
+}
+
+  .thumbnail .img-link {
+    width: 100%;
+}
+
+  ul.describe-1 {
+    width: 100%;
+  }
+
+  .addIssue {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    font-size: 14px !important;
+  }
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .jumbotron {
+    padding-top: 0px;
+  }
+  .jumbotron p {
+    font-size: 5vw;
+  }
+
+  .jumbotron h1 {
+    font-size: 8.7vw;
+  }
+
+  .viewbtn {
+    margin: auto;
+    width: 100%;
+    background-color: #7395ae;
+    font-weight: 700;
+    font-size: 4vw;
+    margin: 10px auto;
+  }
+
+  .viewbtn:hover {
+    background-color: #557a95;
+  }
+
+  .form-group {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .con {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+  .submitBtn {
+    width: 100%;
+    margin: auto;
+    background-color: #7395ae;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px !important;
+  }
+
+  .submitBtn:hover {
+    background-color: #557a95;
+  }
+
+  .row-45 p {
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+
+  .addIssue {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-right: 10px !important;
+    font-size: 16px !important;
+    width: 100%;
+  }
+
+  .headerSpec {
+    margin: 0px;
+    padding: 0px 0px;
+    width: 100%;
+}
+
+#subText {
+    font-size: 3vw;
+}
+
 }

@@ -1729,7 +1729,7 @@ a.svg:after {
 /*--------------15. SCrollbar starts -------------*/
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
 }
 
 /* Track */

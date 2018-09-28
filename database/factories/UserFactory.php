@@ -21,3 +21,13 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Issue::class, function (Faker $faker) {
+    return [
+        'name'        =>    $faker->name,
+        'description' =>    $faker->paragraphs(2),
+        'priority'    =>    $faker->randomElement(['low', 'medium', 'high']),
+        'deadline'    =>    $faker->dateTimeThisMonth()
+
+    ];
+});
