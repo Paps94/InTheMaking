@@ -79,7 +79,7 @@
                           <label class="labelStyle">Deadline:</label>
                           <li><img src="{{ asset('images/fonts/title.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::now()->parse($issue->deadline)->diffForHumans()}}</li>
                         <label class="labelStyle">Description:</label>                                                                                                                                                    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
-                        <p>{{$issue->description }}</p>
+                        <p>{!! nl2br($issue->description) !!}</p>
                         <form action="{{ route('issues.destroy', [$issue->id]) }}" method="POST" >
                                   <input type="hidden" name="_method" value="delete">
                                   {{ csrf_field() }}
