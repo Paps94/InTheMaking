@@ -22,7 +22,7 @@
 <div class="jumbotron">
   <div class="container con">
     <iframe src="/audio/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
-    <audio style="width: 100%; border-radius: 33px;" src="/audio/NyanCatOrchestra.mp3" controls>
+    <audio style="width: 100%; border-radius: 33px;" src="/audio/NyanCatOrchestra.mp3" controls autoplay>
     <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio>
     <h1 class="display-3">New issue pretty boy?</h1>
