@@ -113,7 +113,8 @@
   padding: 0 !important;
   border: none !important;
   max-width: 370px;
-  margin: 0 auto !important;
+  margin: 0 !important;
+  min-width: 100%;
 }
 
 .thumbnail .img-link {
@@ -130,6 +131,7 @@
   will-change: transform;
   width: 107%;
   float: right;
+  background-size: contain;
 }
 
 .thumbnail .img-link:hover .thumbnail-price {

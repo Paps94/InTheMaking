@@ -66,7 +66,7 @@
             <div class="isotope-item col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".2s" data-filter="{{$issue-> priority}}">
               <div class="card-group">
                 <div class="card">
-                  <div class="thumbnail"><a class="img-link" href="/issues/{{$issue->id}}"><img src="{{ asset('images/home/contractthumb.jpg') }}" /><span class="thumbnail-price">{{$issue->priority}}<span class="mon"> Priority</span></span></a></div>
+                  <div class="thumbnail"><a class="img-link" href="/issues/{{$issue->id}}"><img src="{{ asset('images/home/contractthumb.jpg') }}"/><span class="thumbnail-price">{{$issue->priority}}<span class="mon"> Priority</span></span></a></div>
                     <div class="card-body">
                       <div class="caption">
                         <h4>{{$issue->name}}</h4>
