@@ -267,6 +267,9 @@ textarea.form-control {
   margin-bottom: 50px !important;
 }
 
+#inputLabel {
+  margin: 10px auto;
+}
 
 /* -------------------------- Create.balde.php END--------------------------- */
 

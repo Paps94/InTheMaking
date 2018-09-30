@@ -18,6 +18,7 @@
 
 <!--Contact css-->
 <link rel="stylesheet" href="/css/issues.css">
+
 @section('content')
 
 <div class="banner-area" id="slider-area">

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Issue extends Model
 {
@@ -32,4 +33,13 @@ class Issue extends Model
         return $this->photos()->save($photo);
 
     }
+
+    function setDeadlineAttribute($date)
+    {
+
+        return $this->attributes['deadline'] = Carbon::parse($date);
+
+    }
+
+
 }

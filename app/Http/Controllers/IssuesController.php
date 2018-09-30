@@ -7,6 +7,7 @@ use App\Http\Requests\IssueRequest;
 use App\Http\Controllers\Controller;
 use App\Issue;
 use App\Photo;
+use Carbon\Carbon;
 
 class IssuesController extends Controller
 {
@@ -40,9 +41,12 @@ class IssuesController extends Controller
      */
     public function store(IssueRequest $request)
     {
+        $input = $request->input('deadline');
+        $date = Carbon::parse($input)->format('Y/m/d');
+
         $issue = Issue::create([
           'name' => $request->input('name'),
-          'deadline' => $request->input('deadline'),
+          'deadline' => $date,
           'priority' => $request->input('priority'),
           'description' => $request->input('description'),
         ]);
