@@ -77,11 +77,10 @@
                         <label class="labelStyle">Description:</label>                                                                                                                                                    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
                         <p>{!! nl2br($issue->description) !!}</p>
                         <form action="{{ route('issues.destroy', [$issue->id]) }}" method="POST" >
-                                  <input type="hidden" name="_method" value="delete">
-                                  {{ csrf_field() }}
-                                  <button title="Delete" type="submit" href="{{ route('issues.destroy', [$issue->id]) }}" class="btn btn-success btn-success-transparent btn-block deleteBtn"> Completed </button>
+                          <input type="hidden" name="_method" value="delete">
+                          {{ csrf_field() }}
+                          <button title="Delete" type="submit" href="{{ route('issues.destroy', [$issue->id]) }}" class="btn btn-success btn-success-transparent btn-block deleteBtn"> Completed </button>
                         </form>
-
                       </div>
                     </div>
                   </div>

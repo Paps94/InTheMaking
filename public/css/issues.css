@@ -84,6 +84,7 @@
 }
 .card {
   margin-top: 20px;
+  max-height: 650px;
 }
 
 .thumbnail {
@@ -157,6 +158,10 @@
   margin: 5px 0 0 0;
 }
 
+.card-body {
+  overflow: auto;
+}
+
 ul.describe-1 {
   display: inline-block;
   padding: 0;
@@ -212,25 +217,25 @@ ul.describe-1 {
 }
 
 .deleteBtn {
-    font-family: 'Montserrat', sans-serif;
-    padding: 15px 18px !important;
-    font-weight: 700 !important;
-    font-size: 28px !important;
-    line-height: 1 !important;
-    border-width: 2px !important;
-    letter-spacing: 0.96px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px 18px !important;
+  font-weight: 700 !important;
+  font-size: 28px !important;
+  line-height: 1 !important;
+  border-width: 2px !important;
+  letter-spacing: 0.96px;
 }
 
 .isotopeBtn {
-    font-family: 'Montserrat', sans-serif;
-    padding: 15px 18px !important;
-    font-weight: 700 !important;
-    font-size: 28px !important;
-    line-height: 1 !important;
-    border-width: 2px !important;
-    letter-spacing: 0.96px;
-    width: 22%;
-    margin: 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px 18px !important;
+  font-weight: 700 !important;
+  font-size: 28px !important;
+  line-height: 1 !important;
+  border-width: 2px !important;
+  letter-spacing: 0.96px;
+  width: 22%;
+  margin: 15px;
 }
 
 
