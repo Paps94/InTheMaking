@@ -8,6 +8,8 @@ use Carbon\Carbon;
 class Issue extends Model
 {
 
+    protected $dates = ['deadline'];
+
     protected $fillable = [
 
       'name',
@@ -34,12 +36,12 @@ class Issue extends Model
 
     }
 
-    function setDeadlineAttribute($date)
-    {
+    function setDeadlineAttribute() {
 
-        return $this->attributes['deadline'] = Carbon::parse($date);
+        return $this->attributes['deadline'] = Carbon::parse();
 
     }
+
 
 
 }

@@ -12,22 +12,25 @@
   <div class="container con">
     <h1>{{ $issue->name }}</h1>
     <div class="row">
-      <div class=" col-xs-12 col-sm-12	col-md-3 col-lg-3 col-xl-3">
-        <label for="validationDeadline">Deadline: {{ $issue->deadline }}</label>
+      <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <label for="validationDeadline">Deadline: {{ $issue->deadline->format('l jS \\of F Y') }} || {{ Carbon\Carbon::now()->parse($issue->deadline)->diffForHumans() }}</label>
       </div>
-      <div class=" col-xs-12 col-sm-12	col-md-3 col-lg-3 col-xl-3">
+      <div class=" col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
         <label for="validationPriority">Priority: {{ $issue->priority }}</label>
       </div>
-      <div class=" col-xs-12 col-sm-12	col-md-3 col-lg-3 col-xl-3">
-        <a class="btn btn-primary btn-lg viewbtn" href="/issues" role="button">View All Issues</a>
-      </div>
-      <div class=" col-xs-12 col-sm-12	col-md-3 col-lg-3 col-xl-3">
+      <div class=" col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
         <form action="{{ route('issues.destroy', [$issue->id]) }}" method="POST" >
-                  <input type="hidden" name="_method" value="delete">
-                  {{ csrf_field() }}
-                  <button title="Delete" type="submit" href="{{ route('issues.destroy', [$issue->id]) }}" class="btn btn-success btn-lg viewbtn"> Completed </button>
+          <input type="hidden" name="_method" value="delete">
+          {{ csrf_field() }}
+          <button title="Delete" type="submit" href="{{ route('issues.destroy', [$issue->id]) }}" class="btn btn-success btn-lg viewbtn"> Completed </button>
         </form>
       </div>
+    </div>
+    <div class="row">
+      <div class=" col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <a class="btn btn-primary btn-lg viewbtn" href="/issues" role="button">View All Issues</a>
+      </div>
+
     </div>
   </div>
 </div>

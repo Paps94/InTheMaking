@@ -25,7 +25,7 @@
     <audio style="width: 100%; border-radius: 33px;" src="/audio/NyanCatOrchestra.mp3" controls autoplay>
     <p>If you are reading this, it is because your browser does not support the audio element.</p>
     </audio>
-    <h1 class="display-3">New issue pretty boy?</h1>
+    <h1 class="display-3">New issue loser?</h1>
     <p>When are you going to learn!</p>
     <a class="btn btn-primary btn-lg viewbtn" href="{{ route('issues.index') }}" role="button">View All Issues</a>
   </div>

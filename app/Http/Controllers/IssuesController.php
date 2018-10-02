@@ -41,12 +41,9 @@ class IssuesController extends Controller
      */
     public function store(IssueRequest $request)
     {
-        $input = $request->input('deadline');
-        $date = Carbon::parse($input)->format('Y/m/d');
-
         $issue = Issue::create([
           'name' => $request->input('name'),
-          'deadline' => $date,
+          'deadline' => $request->input('deadline'),
           'priority' => $request->input('priority'),
           'description' => $request->input('description'),
         ]);
