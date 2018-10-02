@@ -37,9 +37,9 @@ class Issue extends Model
     }
 
     //Added mutator to be able to handle the deadline entered in the wrong format from what SQL stores dates
-    function setDeadlineAttribute() {
+    function setDeadlineAttribute($date) {
 
-        return $this->attributes['deadline'] = Carbon::parse();
+        return $this->attributes['deadline'] = Carbon::parse($date);
 
     }
 

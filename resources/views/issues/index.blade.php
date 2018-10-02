@@ -26,7 +26,7 @@
     <div class="banner-table">
         <div class="headerSpec">
           <div class="welcome-text">
-            <div style="margin-bottom: 35px;"class="container">
+            <div class="container">
               <div class="row">
                 <div class="col-md-12">
                   <h4><span class="important">Welcome,</span> <br> <span id="subText" style="float: right; padding-top: 10px;">to the issues you need to resolve!</span></h4>
@@ -35,46 +35,44 @@
               </div>
             </div>
             <div class="container">
-              <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="btn-group-isotope">
-                    <button class="btn btn-primary btn-shadow-1 btn-primary-transparent btn-block btn-min-width-sm active" data-isotope-filter="*" data-isotope-group="gallery">All</button>
-                  </div>
+              <div class="col-12" style="padding: 0; margin-bottom: 15px;">
+                <h2 id="isotopeTitles">Priority</h2>
+                <div id="filters" class="button-group">
+                  <button class=" btn btn-primary btn-shadow-1 isotopeBtn is-checked" data-filter="*">Show all</button>
+                  <button class=" btn btn-primary btn-shadow-1 isotopeBtn" data-filter=".low">Low</button>
+                  <button class=" btn btn-primary btn-shadow-1 isotopeBtn" data-filter=".medium">Medium</button>
+                  <button class=" btn btn-primary btn-shadow-1 isotopeBtn" data-filter=".high">High</button>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="btn-group-isotope">
-                    <button class="btn btn-primary btn-shadow-1 btn-primary-transparent btn-block btn-min-width-sm" data-isotope-filter="High" data-isotope-group="gallery">High</button>
-                  </div>
+                <!--
+                <h2 id="isotopeTitles">Sort</h2>
+                <div id="sorts" class="button-group">
+                  <button class="sortBtn is-checked" data-sort-by="original-order">Original Order</button>
+                  <button class="sortBtn" data-sort-by="name">Name</button>
+                  <button class="sortBtn" data-sort-by="dateIssued">Date Issued</button>
+                  <button class="sortBtn" data-sort-by="dateTerminated">Date Terminated</button>
+                  <button class="sortBtn" data-sort-by="prio">Priority</button>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="btn-group-isotope">
-                    <button class="btn btn-primary btn-shadow-1 btn-primary-transparent btn-block btn-min-width-sm" data-isotope-filter="Medium" data-isotope-group="gallery">Medium</button>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                  <div class="btn-group-isotope">
-                    <button class="btn btn-primary btn-shadow-1 btn-primary-transparent btn-block btn-min-width-sm" data-isotope-filter="Low" data-isotope-group="gallery">Low</button>
-                  </div>
-                </div>
+              -->
               </div>
             </div>
           </div>
         </div>
 
         <div class="container">
-          <div class="isotope row row-45 row-md-60 clearleft-custom" data-isotope-group="gallery" data-lightbox="gallery">
+          <div class="grid isotope row row-45 row-md-60 clearleft-custom">
             @foreach ($issues as $issue)
-            <div class="isotope-item col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay=".2s" data-filter="{{$issue-> priority}}">
+            <div class="isotope-item col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp element-item {{$issue->priority}}" data-wow-delay=".2s">
               <div class="card-group">
                 <div class="card">
-                  <div class="thumbnail"><a class="img-link" href="/issues/{{$issue->id}}"><img src="{{ asset('images/home/contractthumb.jpg') }}"/><span class="thumbnail-price">{{$issue->priority}}<span class="mon"> Priority</span></span></a></div>
+                  <div class="thumbnail"><a class="img-link" href="/issues/{{$issue->id}}"><img src="{{ asset('images/home/contractthumb.jpg') }}"/><span class="thumbnail-price prio">{{$issue->priority}}<span class="mon"> Priority</span></span></a></div>
                     <div class="card-body">
                       <div class="caption">
-                        <h4>{{$issue->name}}</h4>
+                        <h4 class="name">{{$issue->name}}</h4>
                         <ul class="describe-1">
                           <label>Start Date - End Date:</label>
-                          <li><img src="{{ asset('images/fonts/startDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->created_at)->format('l jS \\of F Y')}}</li>
-                          <li><img src="{{ asset('images/fonts/endDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->deadline)->format('l jS \\of F Y')}}</li>
+                          <li class="dateIssued"><img src="{{ asset('images/fonts/startDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->created_at)->format('l jS \\of F Y')}}</li>
+                          <li class="dateTerminated"><img src="{{ asset('images/fonts/endDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->deadline)->format('l jS \\of F Y')}}</li>
+                          <li class="dateTerminated"><img src="{{ asset('images/fonts/endDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->deadline)->format('d/m/Y')}}</li>
                           <label class="labelStyle">Deadline:</label>
                           <li><img src="{{ asset('images/fonts/deadline.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::now()->parse($issue->deadline)->diffForHumans()}}</li>
                         <label class="labelStyle">Description:</label>                                                                                                                                                    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
@@ -104,7 +102,58 @@
       </div>
 </div>
 
+
+
 @include('flash')
+
+<script>
+// external js: isotope.pkgd.js
+
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.element-item',
+  layoutMode: 'fitRows',
+  getSortData: {
+    name: '.name',
+    dateTerminated: '.dateTerminated',
+    dateIssued: function( itemElem ) {
+      var dateIssued = $( itemElem ).find('.dateIssued').text();
+      return dateIssued;
+    },
+    prio: '.prio',
+  }
+});
+
+// filter functions
+var filterFns = {
+
+};
+
+// bind filter button click
+$('#filters').on( 'click', 'button', function() {
+var filterValue = $( this ).attr('data-filter');
+// use filterFn if matches value
+filterValue = filterFns[ filterValue ] || filterValue;
+$grid.isotope({ filter: filterValue });
+});
+
+// bind sort button click
+$('#sorts').on( 'click', 'button', function() {
+var sortByValue = $(this).attr('data-sort-by');
+$grid.isotope({ sortBy: sortByValue });
+});
+
+// change is-checked class on buttons
+$('.button-group').each( function( i, buttonGroup ) {
+var $buttonGroup = $( buttonGroup );
+$buttonGroup.on( 'click', 'button', function() {
+  $buttonGroup.find('.is-checked').removeClass('is-checked');
+  $( this ).addClass('is-checked');
+});
+});
+
+
+</script>
 
 <script>
     particlesJS.load('particles-js1', 'json/particles.json', function () {

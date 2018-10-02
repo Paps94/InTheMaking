@@ -3,6 +3,7 @@
     position: relative;
     overflow: visible;
     height: 100% !important;
+    overflow-x:: hidden;
 }
 
 #particles-js1{
@@ -47,30 +48,6 @@
 
 #subText {
   font-size: 2vw;
-}
-
-.btn-group-isotope {
-  font-family: 'Montserrat Alternates';
-  margin-left: -8px;
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  transform: translateY(-10px);
-}
-
-.btn-group-isotope .btn {
-  font-family: 'Montserrat', sans-serif;
-  padding: 15px 18px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1;
-  border-width: 2px;
-  letter-spacing: 0.96px;
-  margin: 5px;
-}
-
-.btn-group-isotope .btn-primary-transparent:hover {
-  background-color: #428EFE;
-  border-color: #428EFE;
 }
 
 .welcome-text h4{
@@ -244,6 +221,19 @@ ul.describe-1 {
     letter-spacing: 0.96px;
 }
 
+.isotopeBtn {
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 18px !important;
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    line-height: 1 !important;
+    border-width: 2px !important;
+    letter-spacing: 0.96px;
+    width: 22%;
+    margin: 15px;
+}
+
+
 .addIssue {
   margin-left: 13px;
 }
@@ -251,6 +241,43 @@ ul.describe-1 {
 .row-45 p {
     text-align: justify;
     margin-bottom: 25px;
+}
+
+.sortBtn {
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  margin-left: 15px;
+  background-color: #fff;
+  color: #337ab7;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid #337ab7;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  text-shadow: 0 1px white;
+  cursor: pointer;
+}
+
+.sortBtn:hover {
+  background-color: #337ab7;
+  color: #fff;
+}
+
+.sortBtn:active,
+.sortBtn.is-checked {
+  background-color: #337ab7;
+}
+
+.sortBtn.is-checked {
+  color: white;
+}
+
+.sortBtn:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+#isotopeTitles {
+  font-size: 5vw;
 }
 
 
@@ -316,6 +343,14 @@ textarea.form-control {
     margin-bottom: 25px;
   }
 
+  .isotopeBtn {
+    width: 21%;
+  }
+
+  #isotopeTitles {
+    font-size: 4vw;
+  }
+
 }
 
 /*
@@ -361,6 +396,17 @@ textarea.form-control {
   .row-45 p {
     text-align: justify;
     margin-bottom: 25px;
+  }
+
+  .isotopeBtn {
+    width: 21%;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    margin: 10px;
+  }
+
+  #isotopeTitles {
+    font-size: 4vw;
   }
 
 }
@@ -482,6 +528,24 @@ textarea.form-control {
     font-size: 14px !important;
   }
 
+  .isotopeBtn {
+    width: 100%;
+    font-weight: 500 !important;
+    font-size: 24px !important;
+    margin: 10px 0;
+  }
+
+  .sortBtn {
+    display: inline-flex;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  #isotopeTitles {
+    font-size: 6vw;
+  }
+
 }
 
 /*
@@ -491,72 +555,90 @@ textarea.form-control {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-  .jumbotron {
-    padding-top: 0px;
-  }
-  .jumbotron p {
-    font-size: 5vw;
+    .jumbotron {
+      padding-top: 0px;
+    }
+    .jumbotron p {
+      font-size: 5vw;
+    }
+
+    .jumbotron h1 {
+      font-size: 8.7vw;
+    }
+
+    .viewbtn {
+      margin: auto;
+      width: 100%;
+      background-color: #7395ae;
+      font-weight: 700;
+      font-size: 4vw;
+      margin: 10px auto;
+    }
+
+    .viewbtn:hover {
+      background-color: #557a95;
+    }
+
+    .form-group {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .con {
+      margin-left: 20px !important;
+      margin-right: 20px !important;
+    }
+
+    .submitBtn {
+      width: 100%;
+      margin: auto;
+      background-color: #7395ae;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 50px !important;
+    }
+
+    .submitBtn:hover {
+      background-color: #557a95;
+    }
+
+    .row-45 p {
+      text-align: justify;
+      margin-bottom: 25px;
+    }
+
+    .addIssue {
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      margin-right: 10px !important;
+      font-size: 16px !important;
+      width: 100%;
+    }
+
+    .headerSpec {
+      margin: 0px;
+      padding: 0px 0px;
+      width: 100%;
   }
 
-  .jumbotron h1 {
-    font-size: 8.7vw;
+  #subText {
+      font-size: 3vw;
   }
 
-  .viewbtn {
-    margin: auto;
+  .isotopeBtn {
     width: 100%;
-    background-color: #7395ae;
-    font-weight: 700;
-    font-size: 4vw;
-    margin: 10px auto;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    margin: 10px 0;
   }
 
-  .viewbtn:hover {
-    background-color: #557a95;
-  }
-
-  .form-group {
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  .con {
-    margin-left: 20px !important;
-    margin-right: 20px !important;
-  }
-
-  .submitBtn {
+  .sortBtn {
+    margin-left: 0px;
+    margin-bottom: 5px;
     width: 100%;
-    margin: auto;
-    background-color: #7395ae;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px !important;
+    font-size: 16px;
   }
 
-  .submitBtn:hover {
-    background-color: #557a95;
+  #isotopeTitles {
+    font-size: 8vw;
   }
-
-  .row-45 p {
-    text-align: justify;
-    margin-bottom: 25px;
-  }
-
-  .addIssue {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-    margin-right: 10px !important;
-    font-size: 16px !important;
-    width: 100%;
-  }
-
-  .headerSpec {
-    margin: 0px;
-    padding: 0px 0px;
-    width: 100%;
-}
-
-#subText {
-    font-size: 3vw;
-}
 
 }
