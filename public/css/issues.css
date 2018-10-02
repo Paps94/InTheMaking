@@ -130,24 +130,24 @@
   transition: 0.3s;
   will-change: transform;
   width: 107%;
-  float: right;
+  float: left;
   background-size: contain;
 }
 
 .thumbnail .img-link:hover .thumbnail-price {
-  padding: 1px 50px 3px 23px;
+  padding: 1px 23px 3px 50px;
 }
 
 .thumbnail .img-link:hover img {
-  -webkit-transform: translateX(4.5%);
-  -ms-transform: translateX(4.5%);
-  transform: translateX(4.5%);
+  -webkit-transform: translateX(-4.5%);
+  -ms-transform: translateX(-4.5%);
+  transform: translateX(-4.5%);
 }
 
 .thumbnail .img-link .thumbnail-price {
   position: absolute;
-  bottom: 24px;
-  right: -8px;
+  bottom: 5px;
+  left: -8px;
   padding: 1px 23px 3px;
   color: #fff;
   font-weight: 700;
