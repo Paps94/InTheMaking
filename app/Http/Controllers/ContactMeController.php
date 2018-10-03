@@ -29,6 +29,7 @@ class ContactMeController extends Controller
         $mail->subject($data['subject']);
       });
 
-      return redirect()->back()->with('success', 'Thank you for your message! Have a nice day!');
+      flash()->success('You are awesome!!!', 'Thank you for your message and have a great day!');
+      return redirect()->route('/');
     }
 }

@@ -3,13 +3,9 @@
 <!--Contact css-->
 <link rel="stylesheet" href="/css/contact.css">
 
-<!--SweetAlerts2 css-->
-<link rel="stylesheet" href="/css/sweetalert2.css">
-
 @section('content')
 
 <div class="contactContainer">
-	@include('layouts.partials._alert')
 		<div class="contactInfoWrap">
 			<span class="contactSymbol">
 				<img src="{{ asset('images/portfolio/icons/email.svg') }}" alt="SYMBOL-MAIL">
@@ -19,7 +15,7 @@
 
 				{{ csrf_field() }}
 			  <span class="contactInfoComment"> Got any feedback for me? </span>
-        <span class="contactInfoComment"> Possibly a job offer :D? </span>
+        <span class="contactInfoComment"> Possibly a job opportunity? </span>
 				<span class="contactInfoTitle">
 					Get In Touch
 				</span>
@@ -35,12 +31,12 @@
 				</div>
         <h6 id="titles">Subject</h6>
         <div class="detailWrap">
-					<input class="detailWrapInfo form-control" type="text" name="subject" placeholder="e.g.  This has to be the most unprofessional portfolio I have ever seen">
+					<input class="detailWrapInfo form-control" type="text" name="subject" placeholder="e.g.  I am lost for words">
 					<span class="focus-detailWrapInfo"></span>
 				</div>
         <h6 id="titles">Description</h6>
 				<div class="detailWrap">
-					<textarea class="detailWrapInfo form-control" name="message" placeholder="e.g.   Please..."></textarea>
+					<textarea class="detailWrapInfo form-control" name="message" placeholder="e.g.   This has to be the most unprofessional portfolio I have ever seen"></textarea>
 					<span class="focus-detailWrapInfo"></span>
 				</div>
 
@@ -53,6 +49,8 @@
 			</form>
 		</div>
 	</div>
+
+	@include('flash')
 
 	<!-- Script for the back button -->
 	<script>

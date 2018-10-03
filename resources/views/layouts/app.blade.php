@@ -44,6 +44,9 @@
     <!--SweetAlerts2 css-->
     <link rel="stylesheet" href="/css/sweetalert2.css">
 
+    <!--SwwetAlert2 js-->
+    <script type="text/javascript" src="{{ URL::asset('js/sweetalert2.min.js') }}"></script>
+
     <title>InTheMaking</title>
   </head>
   <body>
@@ -53,9 +56,5 @@
     @yield('content')
   </body>
 
-  @yield('scripts.footer')
-
-  <!--SweetAlerts2 js-->
-  <script type="text/javascript" src="{{ URL::asset('js.sweetalert2.all.min.js')}}"></script>
 
 </html>

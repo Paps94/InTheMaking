@@ -7,9 +7,6 @@
 <!--Isotope js-->
 <script type="text/javascript" src="{{ URL::asset('js/isotope.pkgd.min.js') }}"></script>
 
-<!--SwwetAlert2 js-->
-<script type="text/javascript" src="{{ URL::asset('js/sweetalert2.min.js') }}"></script>
-
 <!--Particles js-->
 <script type="text/javascript" src="{{ URL::asset('js/particles.js') }}"></script>
 
@@ -61,7 +58,7 @@
         <div class="container">
           <div class="grid isotope row row-45 row-md-60 clearleft-custom">
             @foreach ($issues as $issue)
-            <div class="isotope-item col-lg-4 col-md-6 col-sm-6 col-xs-12 wow fadeInUp element-item {{$issue->priority}}" data-wow-delay=".2s">
+            <div class="isotope-item col-lg-4 col-md-6 col-sm-12 col-xs-12 wow fadeInUp element-item {{$issue->priority}}" data-wow-delay=".2s">
               <div class="card-group">
                 <div class="card">
                   <div class="thumbnail"><a class="img-link" href="/issues/{{$issue->id}}"><img src="{{ asset('images/home/contractthumb.jpg') }}"/><span class="thumbnail-price prio">{{$issue->priority}}<span class="mon"> Priority</span></span></a></div>
@@ -122,32 +119,27 @@ var $grid = $('.grid').isotope({
   }
 });
 
-// filter functions
-var filterFns = {
-
-};
-
 // bind filter button click
 $('#filters').on( 'click', 'button', function() {
-var filterValue = $( this ).attr('data-filter');
-// use filterFn if matches value
-filterValue = filterFns[ filterValue ] || filterValue;
-$grid.isotope({ filter: filterValue });
+  var filterValue = $( this ).attr('data-filter');
+  // use filterFn if matches value
+  filterValue = filterFns[ filterValue ] || filterValue;
+  $grid.isotope({ filter: filterValue });
 });
 
 // bind sort button click
 $('#sorts').on( 'click', 'button', function() {
-var sortByValue = $(this).attr('data-sort-by');
-$grid.isotope({ sortBy: sortByValue });
+  var sortByValue = $(this).attr('data-sort-by');
+  $grid.isotope({ sortBy: sortByValue });
 });
 
 // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
-var $buttonGroup = $( buttonGroup );
-$buttonGroup.on( 'click', 'button', function() {
-  $buttonGroup.find('.is-checked').removeClass('is-checked');
-  $( this ).addClass('is-checked');
-});
+  var $buttonGroup = $( buttonGroup );
+  $buttonGroup.on( 'click', 'button', function() {
+    $buttonGroup.find('.is-checked').removeClass('is-checked');
+    $( this ).addClass('is-checked');
+  });
 });
 
 

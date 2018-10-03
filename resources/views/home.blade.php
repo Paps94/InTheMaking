@@ -725,7 +725,8 @@
     </div>
 
     <!--Footer Area Ends-->
-
+	@include('flash')
+  
 <script src="{{ asset('js/particles.js') }}"></script>
 <script>
     particlesJS.load('particles-js', 'json/particles.json', function () {

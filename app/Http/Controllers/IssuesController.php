@@ -52,9 +52,8 @@ class IssuesController extends Controller
           flash()->success('Success!!!', 'Issue successfully created.. Well done?!?');
           return redirect()->route('issues.index');
         }
-
-        flash()->error('Error!!!', 'You cannot even do this right...');
-        return back()->withInput();
+          flash()->error('Error!!!', 'You cannot even do this right...');
+          return back()->withInput();
     }
 
     /**
