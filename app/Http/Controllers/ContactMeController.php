@@ -30,6 +30,7 @@ class ContactMeController extends Controller
       });
 
       flash()->success('You are awesome!!!', 'Thank you for your message and have a great day!');
-      return redirect()->route('/');
+      return redirect()->back();
+      //return redirect()->route('home');
     }
 }

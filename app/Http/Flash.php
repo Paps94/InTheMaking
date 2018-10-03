@@ -15,7 +15,7 @@ class Flash {
           ]);
     }
 
-    public function create1($title, $message, $key = 'flash_message'){
+    public function createv2($title, $message, $key = 'flash_message'){
 
         return session()->flash($key, [
 
@@ -25,9 +25,26 @@ class Flash {
           ]);
     }
 
+    public function createv3($title, $message, $confirm, $cancel ,$key = 'flash_message'){
+
+        return session()->flash($key, [
+
+            'title'    =>  $title,
+            'message'  =>  $message,
+            'confirm'  =>  $confirm,
+            'cancel'  =>  $cancel
+
+          ]);
+    }
+
     public function info($title, $message){
 
         return $this->create($title, $message, 'info');
+    }
+
+    public function question($title, $message){
+
+        return $this->create($title, $message, 'question');
     }
 
     public function success($title, $message){
@@ -45,8 +62,13 @@ class Flash {
         return $this->create($title, $message, $level, 'flash_message_overlay');
     }
 
+    public function overlay_dual($title, $message, $confirm, $cancel){
+
+        return $this->createv3($title, $message, $confirm, $cancel, 'flash_message_overlay_dual');
+    }
+
     public function gif($title, $message){
 
-        return $this->create1($title, $message, 'flash_message_gif');
+        return $this->createv2($title, $message, 'flash_message_gif');
     }
 }

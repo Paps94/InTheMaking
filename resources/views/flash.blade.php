@@ -24,7 +24,31 @@
         type: "{{ session('flash_message_overlay.type') }}",
         title: "{{ session('flash_message_overlay.title') }}",
         text: "{{ session('flash_message_overlay.message') }}",
-        confirmButtonText: 'Pfffffffff',
+        confirmButtonText: 'Continue',
+      });
+
+
+  </script>
+
+@endif
+
+@if (session()->has('flash_message_overlay_dual'))
+
+  <script>
+
+      swal({
+        type: "{{ session('flash_message_overlay_dual.type') }}",
+        title: "{{ session('flash_message_overlay_dual.title') }}",
+        text: "{{ session('flash_message_overlay_dual.message') }}",
+        animation: false,
+        customClass: 'animated tada',
+        showCloseButton: true,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText:  "{{ session('flash_message_overlay_dual.confirm') }}",
+        confirmButtonAriaLabel: 'Yasss!',
+        cancelButtonText: "{{ session('flash_message_overlay_dual.cancel') }}",
+        cancelButtonAriaLabel: 'Nahhh',
       });
 
 

@@ -5,6 +5,9 @@
 
 <!--Contact css-->
 <link rel="stylesheet" href="/css/issues.css">
+
+<!--Animate css-->
+<link rel="stylesheet" href="/css/animate.css">
 @section('content')
 
 
@@ -56,11 +59,6 @@
       </div>
     </div>
   </div>
-
-
-
-<!--SweetAlerts2 js-->
-<script src="{{ asset('js/sweetalert2.min.js') }}"></script>
 
 @include('flash')
 

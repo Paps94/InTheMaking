@@ -668,13 +668,13 @@ body.swal2-no-backdrop .swal2-shown {
   position: relative;
   flex-direction: column;
   justify-content: center;
-  width: 32em;
+  width: 650px;
   max-width: 100%;
   padding: 0em;
   border-radius: 10px;
   background: #fff;
   font-family: inherit;
-  font-size: 1rem;
+  font-size: 2rem;
   box-sizing: border-box; }
   .swal2-popup:focus {
     outline: none; }
@@ -688,10 +688,10 @@ body.swal2-no-backdrop .swal2-shown {
     display: block;
     position: relative;
     max-width: 100%;
-    margin: 1em 0 0.4em;
+    margin: .1em 0 0.4em;
     padding: 0;
     color: #595959;
-    font-size: 1.875em;
+    font-size: 3em;
     font-weight: 600;
     text-align: center;
     text-transform: none;
@@ -754,7 +754,7 @@ body.swal2-no-backdrop .swal2-shown {
       background: initial;
       background-color: #3085d6;
       color: #fff;
-      font-size: 18px; }
+      font-size: 22px; }
     .swal2-popup .swal2-styled.swal2-cancel {
       border: 0;
       border-radius: 0.25em;
@@ -775,8 +775,9 @@ body.swal2-no-backdrop .swal2-shown {
     color: #545454;
     font-size: 1em; }
   .swal2-popup .swal2-image {
-    max-width: 100%;
+    min-width: 100%;
     margin: auto;
+    margin-bottom: 10px;
     border-radius: 10px;}
   .swal2-popup .swal2-close {
     position: absolute;
@@ -809,10 +810,10 @@ body.swal2-no-backdrop .swal2-shown {
     display: none; }
   .swal2-popup .swal2-content {
     justify-content: center;
+    padding: 10px 25px;
     margin: 10px;
-    padding: 0;
     color: #545454;
-    font-size: 1.125em;
+    font-size: 22px;
     font-weight: 300;
     line-height: normal;
     z-index: 1;
@@ -961,7 +962,7 @@ body.swal2-no-backdrop .swal2-shown {
           user-select: none;
   zoom: normal; }
   .swal2-icon-text {
-    font-size: 3.75em; }
+    font-size: 5em; }
   .swal2-icon.swal2-error {
     border-color: #f27474; }
     .swal2-icon.swal2-error .swal2-x-mark {

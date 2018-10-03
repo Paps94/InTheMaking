@@ -20,6 +20,7 @@ class IssuesController extends Controller
     {
         $issues= Issue::paginate(6);
         return view('issues.index', ['issues' => $issues]);
+        flash()->overlay('Issue or Fix?', 'Come on man... Please tell me this one is a fix...', 'question');
     }
 
     /**
@@ -29,7 +30,7 @@ class IssuesController extends Controller
      */
     public function create()
     {
-        flash()->gif('MEMES', 'Only way to make adding new issues to your website bareable...');
+        flash()->gif('Seriously?!?!?', 'Another one??? Come on... I mean this is getting ridiculous!!! I can\'t take much more of this..');
         return view('issues.create');
     }
 
@@ -64,9 +65,10 @@ class IssuesController extends Controller
      */
     public function show(Issue $issue)
     {
+        flash()->overlay_dual('Hmmm...', 'Is this the issue we are fixing today?', 'Yeap', 'No comments');
         $issue = Issue::find($issue->id);
-
         return view('issues.show', ['issue'=>$issue]);
+
     }
 
     public function addPhoto($id, Request $request, Issue $issue)
@@ -115,7 +117,7 @@ class IssuesController extends Controller
       $findIssue = Issue::find($issue->id);
       if($findIssue->delete()){
          //redirect
-         flash()->success('Success!!!', 'Issue fixed!! Wooooooooooo!');
+         flash()->success('Success!!!', 'Issue fixed!! You the man!');
          return redirect()->route('issues.index');
      }
      flash()->success('!! Error !!', 'Issue unable to be removed.');

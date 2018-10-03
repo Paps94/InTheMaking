@@ -26,7 +26,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
-                  <h4><span class="important">Welcome,</span> <br> <span id="subText" style="float: right; padding-top: 10px;">to the issues you need to resolve!</span></h4>
+                <span class="important">Welcome, much to do...</span>
                 </div>
                 <a class="btn btn-danger btn-lg addIssue" href="{{ route('issues.create') }}" role="button">Add New Issue</a>
               </div>
