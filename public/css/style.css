@@ -1699,6 +1699,7 @@ a.svg:after {
 
 #ClickMe:hover{
   color: #557a95;
+  cursor: pointer;
   text-decoration: line-through;
 }
 

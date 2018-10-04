@@ -124,7 +124,7 @@
                 <div class="col-xs-12 col-sm-7 col-md-7">
                     <div class="about-right wow fadeInDown" data-wow-delay="0.8s">
                         <h1>Hi, I'm <span class="text-primary">Antreas Papadopoulos</span></h1>
-                        <p>I'm a 23 year-old  <a id="ClickMe" href="https://giphy.com/gifs/Cz6TlrRVVyv9S" target="_blank">Computer Science graduate</a>. Ever since graduation I have been working
+                        <p>I'm a 23 year-old  <span id="ClickMe">Computer Science graduate</span>. Ever since graduation I have been working
                           on personal projects which include a decentralized web app called <span class="text-primary">Balloo</span> as part of my dissertation and this personal website of mine.
                            I have a decent knowledge in <span class="text-primary">HTML, Css, PHP, Laravel (PHP framewok)</span> and I have been looking more into Javascript and JQuery.
                         </p>
@@ -725,8 +725,8 @@
     </div>
 
     <!--Footer Area Ends-->
-	@include('flash')
-  
+
+
 <script src="{{ asset('js/particles.js') }}"></script>
 <script>
     particlesJS.load('particles-js', 'json/particles.json', function () {
@@ -748,4 +748,39 @@
       });
 </script>
 
+<script>
+  document.getElementById("ClickMe").addEventListener("click", surprise);
+
+  function surprise() {
+    let timerInterval
+    swal({
+      position: 'top-end',
+      title: 'Don\'t took at me',
+      html: 'GIF will close in <strong></strong> seconds.',
+      backdrop:  `rgba(85,122,149,0.7)
+                  url("/images/gifs/nerd2.gif")
+                  bottom left
+                  no-repeat
+                `,
+      timer: 4500,
+      onOpen: () => {
+        swal.showLoading()
+        timerInterval = setInterval(() => {
+          swal.getContent().querySelector('strong')
+            .textContent = swal.getTimerLeft()
+        }, 100)
+      },
+      onClose: () => {
+        clearInterval(timerInterval)
+      }
+    }).then((result) => {
+      if (
+        // Read more about handling dismissals
+        result.dismiss === swal.DismissReason.timer
+      );
+    });
+  }
+</script>
+
+@include('flash')
 @endsection
