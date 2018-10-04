@@ -19,6 +19,7 @@
 				<span class="contactInfoTitle">
 					Get In Touch
 				</span>
+				@include('layouts.partials._alert')
         <h6 id="titles">Name</h6>
 				<div class="detailWrap form-group">
 					<input class="detailWrapInfo form-control" type="text" name="name" placeholder="e.g.  Antreas Papadopoulos">

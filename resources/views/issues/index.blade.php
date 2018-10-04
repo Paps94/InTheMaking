@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="/css/issues.css">
 
 @section('content')
-
+@include('flash')
 <div class="banner-area" id="slider-area">
   <div id="particles-js1"></div>
     <div class="banner-table">
@@ -42,7 +42,7 @@
                 <!--   <button class="button" data-filter="ium">tmr</button>  -->
                 </div>
 
-                <h2 id="isotopeTitles">Sort</h2>
+                <h2 id="isotopeTitlesS">Sort</h2>
                 <div id="sorts" class="button-group">
                   <button class="sortBtn is-checked" data-sort-by="original-order">Original Order</button>
                   <button class="sortBtn" data-sort-by="name">Name</button>
@@ -98,10 +98,6 @@
 
       </div>
 </div>
-
-
-
-@include('flash')
 
 <script>
 // external js: isotope.pkgd.js

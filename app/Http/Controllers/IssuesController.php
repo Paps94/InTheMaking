@@ -65,7 +65,7 @@ class IssuesController extends Controller
      */
     public function show(Issue $issue)
     {
-        flash()->overlay_dual('Hmmm...', 'Is this the issue we are fixing today?', 'Yeap', 'No comments');
+        flash()->overlay_dual('Hmmm...', 'Is this the issue we are fixing today?', 'Yeap', 'Probably not');
         $issue = Issue::find($issue->id);
         return view('issues.show', ['issue'=>$issue]);
 

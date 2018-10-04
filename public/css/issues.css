@@ -283,6 +283,10 @@ ul.describe-1 {
   font-size: 4vw;
 }
 
+#isotopeTitlesS {
+  font-size: 3vw;
+}
+
 
 /* -------------------------- Create.balde.php --------------------------- */
 
@@ -354,6 +358,10 @@ textarea.form-control {
     font-size: 4vw;
   }
 
+  #isotopeTitlesS {
+    font-size: 3vw;
+  }
+
 }
 
 /*
@@ -410,6 +418,10 @@ textarea.form-control {
 
   #isotopeTitles {
     font-size: 4vw;
+  }
+
+  #isotopeTitlesS {
+    font-size: 3vw;
   }
 
 }
@@ -549,6 +561,10 @@ textarea.form-control {
     font-size: 6vw;
   }
 
+  #isotopeTitlesS {
+    font-size: 5vw;
+  }
+
   .important {
     font-size: 7.5vw;
   }
@@ -644,6 +660,9 @@ textarea.form-control {
     font-size: 8vw;
   }
 
+  #isotopeTitlesS {
+    font-size: 7vw;
+  }
   .important {
     font-size: 9vw;
   }
