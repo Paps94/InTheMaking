@@ -39,17 +39,19 @@
                   <button class=" btn btn-primary btn-shadow-1 isotopeBtn" data-filter=".low">Low</button>
                   <button class=" btn btn-primary btn-shadow-1 isotopeBtn" data-filter=".medium">Medium</button>
                   <button class=" btn btn-primary btn-shadow-1 isotopeBtn" data-filter=".high">High</button>
+                <!--   <button class="button" data-filter="ium">tmr</button>  -->
                 </div>
-                <!--
+
                 <h2 id="isotopeTitles">Sort</h2>
                 <div id="sorts" class="button-group">
                   <button class="sortBtn is-checked" data-sort-by="original-order">Original Order</button>
                   <button class="sortBtn" data-sort-by="name">Name</button>
+                <!--  <button class="sortBtn" data-sort-by="today">Today</button>
+                  <button class="sortBtn" data-sort-by="tomorrow">Tomorrow</button>
                   <button class="sortBtn" data-sort-by="dateIssued">Date Issued</button>
-                  <button class="sortBtn" data-sort-by="dateTerminated">Date Terminated</button>
-                  <button class="sortBtn" data-sort-by="prio">Priority</button>
+                  <button class="sortBtn" data-sort-by="dateTerminated">Date Terminated</button> -->
                 </div>
-              -->
+
               </div>
             </div>
           </div>
@@ -70,7 +72,7 @@
                           <li class="dateIssued"><img src="{{ asset('images/fonts/startDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->created_at)->format('l jS \\of F Y')}}</li>
                           <li class="dateTerminated"><img src="{{ asset('images/fonts/endDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->deadline)->format('l jS \\of F Y')}}</li>
                           <label class="labelStyle">Deadline:</label>
-                          <li><img src="{{ asset('images/fonts/deadline.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::now()->parse($issue->deadline)->diffForHumans()}}</li>
+                          <li class="deadline"><img src="{{ asset('images/fonts/deadline.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::now()->parse($issue->deadline)->diffForHumans()}}</li>
                         <label class="labelStyle">Description:</label>                                                                                                                                                    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
                         <p>{!! nl2br($issue->description) !!}</p>
                         <form action="{{ route('issues.destroy', [$issue->id]) }}" method="POST" >
@@ -109,13 +111,30 @@ var $grid = $('.grid').isotope({
   itemSelector: '.element-item',
   layoutMode: 'fitRows',
   getSortData: {
+    //Sort Name in alphabetical order
     name: '.name',
-    dateTerminated: '.dateTerminated',
+    //Sort Issues ending the same day
+    today: function( itemElem ) {
+      var today = $( itemElem ).find('.deadline').text();
+      return today.match( /hours from now/);
+    },
+    //Sort Issues ending the following days
+    tomorrow: function( itemElem ) {
+      var name = $( itemElem ).find('.deadline').text();
+      return name.match( /1 day from now/ );
+    },
+    //Sort Issued based on the date they were created
     dateIssued: function( itemElem ) {
       var dateIssued = $( itemElem ).find('.dateIssued').text();
+      //alter dateIssued by making in into integer and then sort
       return dateIssued;
     },
-    prio: '.prio',
+    //Sort Issued based on the date they end
+    dateTerminated: function( itemElem ) {
+      var dateTerminated = $( itemElem ).find('.dateTerminated').text();
+      //alter dateTerminated by making in into integer and then sort
+      return dateTerminated;
+    },
   }
 });
 
@@ -126,6 +145,22 @@ $('#filters').on( 'click', 'button', function() {
   filterValue = filterFns[ filterValue ] || filterValue;
   $grid.isotope({ filter: filterValue });
 });
+
+
+// filter functions
+var filterFns = {
+  // show if number is greater than 50
+  upcoming: function() {
+    var number = $(this).find('.number').text();
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function() {
+    var name = $(this).find('.deadline').text();
+    return name.match( /1 day from now/ );
+  }
+};
+
 
 // bind sort button click
 $('#sorts').on( 'click', 'button', function() {
