@@ -759,7 +759,7 @@
       html: 'GIF will close in <strong></strong> seconds.',
       backdrop:  `rgba(85,122,149,0.7)
                   url("/images/gifs/nerd2.gif")
-                  bottom left
+                  bottom center
                   no-repeat
                 `,
       timer: 4500,
