@@ -38,5 +38,8 @@ Route::post('/contact', [
   'as' => 'contact.store'
 ]);
 
-Route::resource('issues', 'IssuesController');
-Route::post('issues/{id}/photos', 'IssuesController@addPhoto');
+Route::group(['middleware' => 'under-construction'], function () {
+  Route::resource('issues', 'IssuesController');
+  //Route::post('issues/{id}/photos', 'IssuesController@addPhoto');
+
+});
