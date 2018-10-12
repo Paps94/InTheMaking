@@ -173,7 +173,7 @@ img {
 }
 
 .nav-area.sticky_navigation{
-    background: #ffffff;
+    background: #557a95;
     height: 55px;
 }
 
@@ -193,23 +193,23 @@ img {
 }
 
 .sticky_navigation .navbar-brand, .sticky_navigation .navbar-brand span {
-    color: #557a95;
+    color: #fff;
 }
 
 .sticky_navigation .navbar-brand:hover, .sticky_navigation .navbar-brand:focus, .sticky_navigation .navbar-brand span {
-    color: #557a95;
+    color: #fff;
 }
 
 .sticky_navigation .nav li a {
-    color: #5d5c61;
+    color: #fff;
 }
 
 .sticky_navigation .nav li.active a{
-    color: #557a95;
+    color: #fff;
 }
 
 .sticky_navigation .navbar-brand:hover{
-    color: #5d5c61;
+    color: #333;
 }
 
 .main-menu{
@@ -252,16 +252,19 @@ img {
 }
 
 .navbar-right li a:hover{
-    color: #557a95;
+    color: #333;
 }
 
 .navbar-right li.active a{
     font-weight: bold;
-    color: #557a95;
+    color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
 }
 
 .nav > li > a {
-    padding: 15px 10px;
+  margin-top: 2px;
+  padding: 15px 10px;
 }
 
 .nav > li > a:hover,
@@ -1620,13 +1623,11 @@ a.svg:after {
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    margin: 0 auto;
+    margin: 0 5px;
 }
 
 .contact-icon a {
     display: inline-block;
-    height: 40px;
-    width: 40px;
     font-size: 16px;
     color: #5d5c61;
     -webkit-transition: 0.3s;
@@ -1634,14 +1635,14 @@ a.svg:after {
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    border: 2px solid #5d5c61;
+    border: none;
     background: transparent;
     line-height: 2.5;
     text-align: center;
 }
 
 .contact-icon a:hover{
-    background: #5d5c61;
+    background: #557a95;
     color: #ffffff;
 }
 
@@ -1658,13 +1659,28 @@ a.svg:after {
     margin-bottom: 25px;
 }
 
+.svgContact{
+  height: 70px;
+  width: 70px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 2px;
+  transform: rotate(-45deg);
+}
+
 .social i {
     font-size: 18px;
     color: #000000;
     margin: 0 10px;
 }
 
-.social i:hover {
+.social img {
+    height: 25px;
+    width: 25px;
+    margin: 5px 10px;
+}
+
+.social img:hover {
     cursor: pointer;
     -webkit-transform: rotate(360deg);
   	-ms-transform: rotate(360deg);

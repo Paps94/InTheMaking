@@ -58,9 +58,9 @@
                                 </button>
                             </div>
 
-                            <div class="navbar-collapse collapse">
+                            <div class="navbar-collapse collapse" style="overflow-x:hidden;">
                                 <nav>
-                                    <ul class="nav navbar-nav navbar-right">
+                                    <ul id="top-menu" class="nav navbar-nav navbar-right">
                                         <li class="active"><a class="smooth-menu" href="#home">Home</a></li>
                                         <li><a class="smooth-menu" href="#about">About Me</a></li>
                                         <li><a class="smooth-menu" href="#resume">Resume</a></li>
@@ -654,7 +654,7 @@
                                  <div class="top-contact-text wow fadeInDown" data-wow-delay="0.2s">
                                      <div class="contact-icon">
                                          <ul>
-                                             <li><a href="https://www.google.com/maps/search/?api=1&query=Nevern+Roa%2C+SW59PJ" target="_blank"><i class="fa fa-map-marker"></i></a></li>
+                                             <li><a href="https://www.google.com/maps/search/?api=1&query=Nevern+Roa%2C+SW59PJ" target="_blank"><img src="{{ asset('images/portfolio/icons/home.svg') }}" class="svgContact"/></a></li>
                                          </ul>
                                      </div>
 
@@ -666,18 +666,20 @@
                                  <div class="top-contact-text wow fadeInDown" data-wow-delay="0.4s">
                                      <div class="contact-icon">
                                          <ul>
-                                             <li><a href="tel:+447999435635"><i class="fa fa-phone"></i></a></li>
+                                             <li><a href="tel:+447999435635"><img src="{{ asset('images/portfolio/icons/united-kingdom.svg') }}" class="svgContact"/></a></li>
+                                             <li><a href="tel:+35796650246"><img src="{{ asset('images/portfolio/icons/cyprus.svg') }}" class="svgContact"/></a></li>
                                          </ul>
                                      </div>
-                                     <h2>Contact Number</h2>
+                                     <h2>Contact Number(s)</h2>
                                      <p>+44 (0)7 999 435 635</p>
+                                     <p>+357 96 650 246</p>
                                  </div>
                              </div>
                              <div class="col-sm-3 col-md-3">
                                  <div class="top-contact-text wow fadeInDown" data-wow-delay="0.4s">
                                      <div class="contact-icon">
                                          <ul>
-                                             <li><a href="mailto:antreas.paps@yahoo.com?Subject=Feedback%20Timeeee" target="_top"><i class="fa fa-envelope"></i></a></li>
+                                             <li><a href="mailto:antreas.paps@yahoo.com?Subject=Feedback%20Timeeee" target="_top"><img src="{{ asset('images/portfolio/icons/emailpersonal.svg') }}" class="svgContact"/></a></li>
                                          </ul>
                                      </div>
                                      <h2>Email Address</h2>
@@ -688,15 +690,15 @@
                                  <div class="top-contact-text wow fadeInDown" data-wow-delay="0.6s">
                                      <div class="contact-icon">
                                          <ul>
-                                             <li><a href="#contact"><i class="fa fa-gg"></i></a></li>
+                                             <li><a href="#contact"><img src="{{ asset('images/portfolio/icons/socialmedia.svg') }}" class="svgContact"/></a></li>
                                          </ul>
                                      </div>
 
                                      <h2>Social Media</h2>
                                      <div class="social">
-                                        <a href="https://github.com/Paps94" target="_blank"><i class="fa fa-github"></i></a>
-                                        <a href="https://www.linkedin.com/in/antreas-papadopoulos-819891158/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                        <a href="https://www.instagram.com/antreas.paps/" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        <a href="https://github.com/Paps94" target="_blank"><img src="{{ asset('images/portfolio/icons/github.svg') }}"/></a>
+                                        <a href="https://www.linkedin.com/in/antreas-papadopoulos-819891158/" target="_blank"><img src="{{ asset('images/portfolio/icons/linkedin.svg') }}"/></a>
+                                        <a href="https://www.instagram.com/antreas.paps/" target="_blank"><img src="{{ asset('images/portfolio/icons/instagram.svg') }}"/></a>
                                     </div>
                                  </div>
                              </div>
@@ -743,9 +745,59 @@
 
           $('.nav a').on('click', function(){
             $('.navbar-toggle').click();
-
-        });
+          });
       });
+</script>
+
+<script>
+jQuery(document).ready(function(jQuery) {
+          var topMenu = jQuery("#top-menu"),
+              offset = 40,
+              topMenuHeight = topMenu.outerHeight()+offset,
+              // All list items
+              menuItems =  topMenu.find('a[href*="#"]'),
+              // Anchors corresponding to menu items
+              scrollItems = menuItems.map(function(){
+                var href = jQuery(this).attr("href"),
+                id = href.substring(href.indexOf('#')),
+                item = jQuery(id);
+                //console.log(item)
+                if (item.length) { return item; }
+              });
+
+          // so we can get a fancy scroll animation
+          menuItems.click(function(e){
+            var href = jQuery(this).attr("href"),
+              id = href.substring(href.indexOf('#'));
+                offsetTop = href === "#" ? 0 : jQuery(id).offset().top-topMenuHeight+1;
+            jQuery('html, body').stop().animate({
+                scrollTop: offsetTop
+            }, 300);
+            e.preventDefault();
+          });
+
+          // Bind to scroll
+          jQuery(window).scroll(function(){
+             // Get container scroll position
+             var fromTop = jQuery(this).scrollTop()+topMenuHeight;
+
+             // Get id of current scroll item
+             var cur = scrollItems.map(function(){
+               if (jQuery(this).offset().top < fromTop)
+                 return this;
+             });
+
+             // Get the id of the current element
+             cur = cur[cur.length-1];
+             var id = cur && cur.length ? cur[0].id : "";
+
+             menuItems.parent().removeClass("active");
+             if(id){
+                  menuItems.parent().end().filter("[href*='#"+id+"']").parent().addClass("active");
+             }
+
+          })
+      })
 </script>
 
 <script>
