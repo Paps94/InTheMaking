@@ -49,7 +49,7 @@
                         <div class="navbar navbar-cus">
 
                             <div class="navbar-header">
-                                <a href="/" class="navbar-brand">#Logo</a>
+                                <a href="/issues" class="navbar-brand">#Logo</a>
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
