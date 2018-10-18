@@ -6,7 +6,6 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="portfolio template based on HTML5">
     <meta name="keywords" content="onepage, developer, resume, cv, ,personal, portfolio, personal resume, clean, modern">
-    <meta name="author" content="MouriTheme">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
@@ -46,6 +45,9 @@
 
     <!--SwwetAlert2 js-->
     <script type="text/javascript" src="{{ URL::asset('js/sweetalert2.min.js') }}"></script>
+
+    <!--reCaptcha js-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <title>InTheMaking</title>
   </head>

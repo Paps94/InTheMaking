@@ -28,7 +28,8 @@ class StoreFormValidation extends FormRequest
           'name' => 'required|max:25',
           'email' => 'required|email|min:7',
           'subject' => 'required|min:2',
-          'message' => 'required|min:2'
+          'message' => 'required|min:2',
+          'g-recaptcha-response' => 'required|captcha'
         ];
     }
 
@@ -48,7 +49,7 @@ class StoreFormValidation extends FormRequest
           'message.required'=> 'Psssst.. You didn\'t put a message for me. <i class="far fa-frown" style="font-size:20px;"></i>',
           'message.min'=> 'I mean you already did the trouble of coming here. Make the message meaningfull!',
 
-
+          'g-recaptcha-response.required'=> 'I am scared of bots so to prove you ain\'t one.. complete the reCaptcha box!',
 
       ];
     }

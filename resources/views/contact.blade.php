@@ -40,7 +40,15 @@
 					<textarea class="detailWrapInfo form-control" name="message" placeholder="e.g.   This has to be the most unprofessional portfolio I have ever seen"></textarea>
 					<span class="focus-detailWrapInfo"></span>
 				</div>
-
+				<h6 id="titles">Captcha</h6>
+				<div class="detailWrap">
+					<div class="g-recaptcha" data-sitekey="6LeUIXUUAAAAAIGEco8CpOrFgNoSbHw77lrlKTV0"></div>
+					<!--	@if($errors->has('g-recaptcha-response'))
+						<span class="invalid-feedback" style="display:block;">
+							<strong>{{$errors->first('g-recaptcha-response')}}</strong>
+						</span>
+						@endif -->
+				</div>
         <div class="containerButton">
   					<button class="submitButton">
 							<i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
