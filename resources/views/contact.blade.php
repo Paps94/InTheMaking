@@ -3,6 +3,9 @@
 <!--Contact css-->
 <link rel="stylesheet" href="/css/contact.css">
 
+<!--reCaptcha js-->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 @section('content')
 
 <div class="contactContainer">

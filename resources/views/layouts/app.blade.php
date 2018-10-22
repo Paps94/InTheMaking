@@ -46,9 +46,6 @@
     <!--SwwetAlert2 js-->
     <script type="text/javascript" src="{{ URL::asset('js/sweetalert2.min.js') }}"></script>
 
-    <!--reCaptcha js-->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-
     <title>InTheMaking</title>
   </head>
   <body>

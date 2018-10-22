@@ -25,11 +25,11 @@ class StoreFormValidation extends FormRequest
     public function rules()
     {
         return [
-          'name' => 'required|max:25',
-          'email' => 'required|email|min:7',
-          'subject' => 'required|min:2',
-          'message' => 'required|min:2',
-          'g-recaptcha-response' => 'required|captcha'
+          'name'                  =>    'required|max:25',
+          'email'                 =>    'required|email|min:7',
+          'subject'               =>    'required|min:2',
+          'message'               =>    'required|min:2',
+          'g-recaptcha-response'  =>    'required|recaptcha'
         ];
     }
 
@@ -50,6 +50,7 @@ class StoreFormValidation extends FormRequest
           'message.min'=> 'I mean you already did the trouble of coming here. Make the message meaningfull!',
 
           'g-recaptcha-response.required'=> 'I am scared of bots so to prove you ain\'t one.. complete the reCaptcha box!',
+          'g-recaptcha-response.recaptcha'=> 'Please ensure that you are a human!',
 
       ];
     }

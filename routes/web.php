@@ -11,9 +11,11 @@
 |
 */
 
+//Home Route
 Route::get('/', function () {
     return view('home');
 })->name('home');
+
 
 //To Download the resume
 Route::get('/download', function () {
@@ -41,5 +43,4 @@ Route::post('/contact', [
 Route::group(['middleware' => 'under-construction'], function () {
   Route::resource('issues', 'IssuesController');
   //Route::post('issues/{id}/photos', 'IssuesController@addPhoto');
-
 });
