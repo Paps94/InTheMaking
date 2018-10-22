@@ -50,6 +50,7 @@ class StoreFormValidation extends FormRequest
           'message.min'=> 'I mean you already did the trouble of coming here. Make the message meaningfull!',
 
           'g-recaptcha-response.required'=> 'I am scared of bots so to prove you ain\'t one.. complete the reCaptcha box!',
+          'g-recaptcha-response.recaptcha'=>'Please ensure that you are a human!',
 
       ];
     }
