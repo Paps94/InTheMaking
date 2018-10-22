@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreFormValidation;
 use Illuminate\Http\Request;
+use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Client;
 use Mail;
 
 class ContactMeController extends Controller
@@ -23,6 +25,24 @@ class ContactMeController extends Controller
         'bodyMessage' => $request->message,
       );
 
+      $token = $request->input('g-recaptcha-response');
+
+      if ($token) {
+        $client = new Client();
+
+        $response = $client->post('https://www.google.com/recaptcha/api/siteverify',
+            ['form_params'=>
+                [
+                    'secret'=>env('GOOGLE_RECAPTCHA_SECRET'),
+                    'response'=>$token,
+                    'remoteip'=>$_SERVER['REMOTE_ADDR']
+                 ]
+            ]
+        );
+
+        $results = json_decode((string)$response->getBody()->getContents());
+
+      }
       if ($results->success){
         Mail::send('emails.contact-message', $data, function ($mail) use($data) {
           $mail->from ($data['email'], $data['name']);
