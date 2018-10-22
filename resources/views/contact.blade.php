@@ -4,7 +4,8 @@
 <link rel="stylesheet" href="/css/contact.css">
 
 <!--reCaptcha js-->
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 @section('content')
 
