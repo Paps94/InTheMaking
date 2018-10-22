@@ -23,11 +23,10 @@ class ContactMeController extends Controller
         'bodyMessage' => $request->message,
       );
 
-      Mail::send('emails.contact-message', $data, function ($mail) use($data) {
+      Mail::send(markdown('emails.contact-message'), $data, function ($mail) use($data) {
         $mail->from ($data['email'], $data['name']);
         $mail->to ('antreas.paps@yahoo.com');
         $mail->subject($data['subject']);
-        $mail->markdown('emails.contact-message');
       });
 
       flash()->success('You are awesome!!!', 'Thank you for your message and have a great day!');
