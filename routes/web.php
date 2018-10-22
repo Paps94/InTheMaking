@@ -29,10 +29,7 @@ Route::get('/download', function () {
   return Response::download($file, 'AntreasPapadopoulos-CV.pdf', $headers);
 });
 
-//Display Contact page through the ContactMeController and funciton 'show'
-Route::get('/contact', [
-  'uses' => 'ContactMeController@show'
-]);
+
 
 //Display Contact page through the ContactMeController and funciton 'store'
 Route::post('/contact', [
@@ -43,4 +40,9 @@ Route::post('/contact', [
 Route::group(['middleware' => 'under-construction'], function () {
   Route::resource('issues', 'IssuesController');
   //Route::post('issues/{id}/photos', 'IssuesController@addPhoto');
+
+  //Display Contact page through the ContactMeController and funciton 'show'
+  Route::get('/contact', [
+    'uses' => 'ContactMeController@show'
+  ]);
 });

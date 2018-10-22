@@ -15,7 +15,7 @@ return [
     /*
      * Under construction title.
      */
-    'title' => 'Permission Required',
+    'title' => 'Under Maintenance',
 
     /*
      * Back button translation.
