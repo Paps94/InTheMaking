@@ -54,7 +54,7 @@ class ContactMeController extends Controller
         return redirect()->route('home');
       } else {
         flash()->error('Something went wrong!!!', 'Make sure you filled everything and ticked the reCaptcha box!');
-        return redirect('/contact')->withInput(Input::all());
+        return redirect('/contact');
       }
     }
 
