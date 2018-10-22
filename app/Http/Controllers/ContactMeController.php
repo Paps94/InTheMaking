@@ -23,7 +23,7 @@ class ContactMeController extends Controller
         'bodyMessage' => $request->message,
       );
 
-      if ($body->success){
+      if ($data->success){
         Mail::send('emails.contact-message', $data, function ($mail) use($data) {
           $mail->from ($data['email'], $data['name']);
           $mail->to ('antreas.paps@yahoo.com');
