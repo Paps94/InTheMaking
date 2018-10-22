@@ -23,7 +23,7 @@ class ContactMeController extends Controller
         'bodyMessage' => $request->message,
       );
 
-      if ($results->success){
+      if ($body->success){
         Mail::send('emails.contact-message', $data, function ($mail) use($data) {
           $mail->from ($data['email'], $data['name']);
           $mail->to ('antreas.paps@yahoo.com');
@@ -34,7 +34,7 @@ class ContactMeController extends Controller
         return redirect()->route('home');
       } else {
         flash()->error('Something went wrong!!!', 'Make sure you filled everything and ticked the reCaptcha box!');
-        return redirect('/contact')->withInput(Input::all());
+        return redirect('/contact');
       }
     }
 
