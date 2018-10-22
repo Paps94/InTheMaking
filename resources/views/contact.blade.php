@@ -45,7 +45,7 @@
 				</div>
 				<h6 id="titles">Captcha</h6>
 				<div class="detailWrap">
-					<div class="g-recaptcha" data-sitekey="6LeUIXUUAAAAAIGEco8CpOrFgNoSbHw77lrlKTV0"></div>
+					<div class="g-recaptcha" data-sitekey="6LeYIHUUAAAAAFq5uZ2mnN1yxFzrz8b5EYvEtddh"></div>
 					<!--	@if($errors->has('g-recaptcha-response'))
 						<span class="invalid-feedback" style="display:block;">
 							<strong>{{$errors->first('g-recaptcha-response')}}</strong>
