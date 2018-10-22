@@ -23,16 +23,16 @@ class ContactMeController extends Controller
         'bodyMessage' => $request->message,
       );
 
-      if ($data->success){
-        Mail::send('emails.contact-message', $data, function ($mail) use($data) {
-          $mail->from ($data['email'], $data['name']);
-          $mail->to ('antreas.paps@yahoo.com');
-          $mail->subject($data['subject']);
-        });
+      Mail::send('emails.contact-message', $data, function ($mail) use($data) {
+        $mail->from ($data['email'], $data['name']);
+        $mail->to ('antreas.paps@yahoo.com');
+        $mail->subject($data['subject']);
+      });
 
-        flash()->success('You are awesome!!!', 'Thank you for your message and have a great day!');
-        return redirect()->route('home');
-      } else {
+      flash()->success('You are awesome!!!', 'Thank you for your message and have a great day!');
+      return redirect()->route('home');
+      
+      else {
         flash()->error('Something went wrong!!!', 'Make sure you filled everything and ticked the reCaptcha box!');
         return redirect('/contact');
       }
