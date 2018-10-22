@@ -27,11 +27,12 @@ class ContactMeController extends Controller
         $mail->from ($data['email'], $data['name']);
         $mail->to ('antreas.paps@yahoo.com');
         $mail->subject($data['subject']);
+        $mail->markdown('emails.contact-message');
       });
 
       flash()->success('You are awesome!!!', 'Thank you for your message and have a great day!');
       return redirect()->route('home');
-      
+
     }
 
 }
