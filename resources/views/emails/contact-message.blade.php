@@ -1,30 +1,41 @@
 @extends('layouts.app')
+
+<!--Bootstrap css-->
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+
 @section('content')
 
-<h3> Hey retard, somehow you have a contact request through your contact form</h3>
-<br>
-<h5>I am equally as surprised, yes.</h5>
-<br>
-<hr style="width: 100%;">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6" >
-       {{ $name }}
-    </div>
-    <div class="col-lg-6">
-       {{ $email }}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      {{ $subject }}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-12">
-      {{ $bodyMessage }}
-    </div>
-  </div>
-</div>
+@component('mail::layout')
+    {{-- Header --}}
+    @slot('header')
+        @component('mail::header', ['url' => config('app.url')])
+            You got a new email from your website!
+        @endcomponent
+    @endslot
+
+{{-- Body --}}
+    Was sent by:  {{ $name }}
+    From :        {{ $email }}
+    Subject:      {{ $subject }}
+    _______________________________________________
+
+    {{ $bodyMessage }}
+
+{{-- Subcopy --}}
+    @isset($subcopy)
+        @slot('subcopy')
+            @component('mail::subcopy')
+                {{ $subcopy }}
+            @endcomponent
+        @endslot
+    @endisset
+
+{{-- Footer --}}
+    @slot('footer')
+        @component('mail::footer')
+            © {{ date('Y') }} {{ config('app.name') }}. Super FOOTER!
+        @endcomponent
+    @endslot
+@endcomponent
 
 @endsection
