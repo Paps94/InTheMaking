@@ -1,8 +1,5 @@
 @extends('layouts.app')
 
-<!--Bootstrap css-->
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-
 @section('content')
 
 @component('mail::layout')
