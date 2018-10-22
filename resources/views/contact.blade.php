@@ -44,7 +44,7 @@
 					<textarea class="detailWrapInfo form-control" name="message" placeholder="e.g.   This has to be the most unprofessional portfolio I have ever seen"></textarea>
 					<span class="focus-detailWrapInfo"></span>
 				</div>
-				<h6 id="titles">Captcha</h6>
+				<h6 id="titles">reCaptcha</h6>
 				<div class="detailWrap">
 					<div class="g-recaptcha" data-sitekey="6LeYIHUUAAAAAFq5uZ2mnN1yxFzrz8b5EYvEtddh"></div>
 					<!--	@if($errors->has('g-recaptcha-response'))

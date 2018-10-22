@@ -29,7 +29,7 @@ class StoreFormValidation extends FormRequest
           'email'                 =>    'required|email|min:7',
           'subject'               =>    'required|min:2',
           'message'               =>    'required|min:2',
-          'g-recaptcha-response'  =>    'required|recaptcha'
+          'g-recaptcha-response'  =>    'required'
         ];
     }
 
