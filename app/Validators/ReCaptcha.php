@@ -2,7 +2,6 @@
 
 namespace App\Validators;
 
-use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Client;
 
 class ReCaptcha
