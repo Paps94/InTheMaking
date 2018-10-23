@@ -14,11 +14,11 @@
 -------------------------------------------------------------------
 | Sender              | Email               | Subject              |
 | -------------       |:-------------:      | --------:            |
-|  {{ $data[name] }}  | {{ $data[email] }}  | {{ $data[subject] }} |
+|  {{ $data['name'] }}  | {{ $data['email'] }}  | {{ $data['subject'] }} |
 -------------------------------------------------------------------
 @endcomponent
 
-Email Content:   {{ $data[bodyMessage] }}
+Email Content:   {{ $data['bodyMessage'] }}
 
 @component('mail::button', ['url' => 'inthemaking.tech'])
 Take me to my website
