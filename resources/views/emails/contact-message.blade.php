@@ -18,7 +18,10 @@
 
 @endcomponent
 
-Email Content:   {{ $data['bodyMessage'] }}
+@component('mail::panel', ['url' => ''])
+{{ $data['bodyMessage'] }}
+@endcomponent
+
 
 @component('mail::button', ['url' => 'inthemaking.tech'])
 Take me to my website
