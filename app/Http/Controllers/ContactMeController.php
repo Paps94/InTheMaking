@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreFormValidation;
 use Illuminate\Http\Request;
+use App\Mail\ContactFormMail;
 use Mail;
 
 class ContactMeController extends Controller
@@ -23,7 +24,7 @@ class ContactMeController extends Controller
         'bodyMessage' => $request->message,
       );
 
-      Mail::send(markdown('emails.contact-message'), $data, function ($mail) use($data) {
+      Mail::send(new ContactFormMail(), $data, function ($mail) use($data) {
         $mail->from ($data['email'], $data['name']);
         $mail->to ('antreas.paps@yahoo.com');
         $mail->subject($data['subject']);
