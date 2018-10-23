@@ -11,14 +11,14 @@
 
 {{-- Body --}}
 @component('mail::table')
---------------------------------------------------
-| Sender        | Email         | Subject        |
-| ------------- |:-------------:| --------:      |
-|  {{ $name }}  | {{ $email }}  | {{ $subject }} |
---------------------------------------------------
+-------------------------------------------------------------------
+| Sender              | Email               | Subject              |
+| -------------       |:-------------:      | --------:            |
+|  {{ $data[name] }}  | {{ $data[email] }}  | {{ $data[subject] }} |
+-------------------------------------------------------------------
 @endcomponent
 
-Email Content:   {{ $bodyMessage }}
+Email Content:   {{ $data[bodyMessage] }}
 
 @component('mail::button', ['url' => 'inthemaking.tech'])
 Take me to my website
