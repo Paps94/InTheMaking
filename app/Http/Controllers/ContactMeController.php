@@ -24,12 +24,14 @@ class ContactMeController extends Controller
         'bodyMessage' => $request->message,
       );
 
-      Mail::send(new ContactFormMail($data), $data, function ($mail) use($data) {
+      Mail::to('antreas.paps@yahoo.com')->send(new ContactFormMail($data));
+
+/*      Mail::send(new ContactFormMail($data), $data, function ($mail) use($data) {
         $mail->from ($data['email'], $data['name']);
         $mail->to ('antreas.paps@yahoo.com');
         $mail->subject($data['subject']);
       });
-
+*/
       flash()->success('You are awesome!!!', 'Thank you for your message and have a great day!');
       return redirect()->route('home');
 
