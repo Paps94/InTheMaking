@@ -24,7 +24,7 @@ class ContactMeController extends Controller
         'bodyMessage' => $request->message,
       );
 
-      Mail::send(new ContactFormMail($data), $data, function ($mail) use($data) {
+      Mail::send(new ContactFormMail($data) {
         $mail->from ($data['email'], $data['name']);
         $mail->to ('antreas.paps@yahoo.com');
         $mail->subject($data['subject']);
