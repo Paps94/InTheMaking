@@ -34,6 +34,11 @@ Route::get('/contact', [
   'uses' => 'ContactMeController@show'
 ]);
 
+//Display Contact page through the ContactMeController and funciton 'show'
+Route::get('/contact', [
+  'uses' => 'ContactMeController@show'
+]);
+
 //Display Contact page through the ContactMeController and funciton 'store'
 Route::post('/contact', [
   'uses' => 'ContactMeController@store',
@@ -43,10 +48,4 @@ Route::post('/contact', [
 Route::group(['middleware' => 'under-construction'], function () {
   Route::resource('issues', 'IssuesController');
   //Route::post('issues/{id}/photos', 'IssuesController@addPhoto');
-
-  //Display Contact page through the ContactMeController and funciton 'show'
-  Route::get('/contact', [
-    'uses' => 'ContactMeController@show'
-  ]);
-  
 });

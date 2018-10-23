@@ -28,7 +28,7 @@ Take me to my website
 @endcomponent
 
 Thanks,<br>
-Your **past self**
+Your **PAST SELF**
 
 {{-- Footer --}}
     @slot('footer')
