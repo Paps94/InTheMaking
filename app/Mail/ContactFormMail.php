@@ -12,7 +12,7 @@ class ContactFormMail extends Mailable
     use Queueable, SerializesModels;
 
     public $data;
-    
+
     /**
      * Create a new message instance.
      *
@@ -30,6 +30,8 @@ class ContactFormMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.contact-message')->with('data', $this->data);
+        return $this->from($data['email'])
+                    ->subject($data['subject'])
+                    ->markdown('emails.contact-message')->with('data', $this->data);
     }
 }

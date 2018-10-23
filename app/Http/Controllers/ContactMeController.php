@@ -24,12 +24,7 @@ class ContactMeController extends Controller
         'bodyMessage' => $request->message,
       );
 
-      Mail::to('antreas.paps@yahoo.com')
-        ->from ($data['email'], $data['name'])
-        ->cc('skevikarasamani@gmail.com')
-        ->to ('antreas.paps@yahoo.com')
-        ->subject($data['subject'])
-        ->send(new ContactFormMail($data));
+      Mail::to('antreas.paps@yahoo.com')->send(new ContactFormMail($data));
 
       flash()->success('You are awesome!!!', 'Thank you for your message and have a great day!');
       return redirect()->route('home');
