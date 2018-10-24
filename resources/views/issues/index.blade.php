@@ -45,11 +45,10 @@
                 <h2 id="isotopeTitlesS">Sort</h2>
                 <div id="sorts" class="button-group">
                   <button class="sortBtn is-checked" data-sort-by="original-order">Original Order</button>
+                  <button class="sortBtn shuffle-button" data-sort-by="random">Random</button>
                   <button class="sortBtn" data-sort-by="name">Name</button>
-                <!--  <button class="sortBtn" data-sort-by="today">Today</button>
-                  <button class="sortBtn" data-sort-by="tomorrow">Tomorrow</button>
                   <button class="sortBtn" data-sort-by="dateIssued">Date Issued</button>
-                  <button class="sortBtn" data-sort-by="dateTerminated">Date Terminated</button> -->
+                  <button class="sortBtn" data-sort-by="dateTerminated">Date Terminated</button>
                 </div>
 
               </div>
@@ -69,8 +68,12 @@
                         <h4 class="name">{{$issue->name}}</h4>
                         <ul class="describe-1">
                           <label>Start Date - End Date:</label>
-                          <li class="dateIssued"><img src="{{ asset('images/fonts/startDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->created_at)->format('l jS \\of F Y')}}</li>
-                          <li class="dateTerminated"><img src="{{ asset('images/fonts/endDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->deadline)->format('l jS \\of F Y')}}</li>
+                          <li><img src="{{ asset('images/fonts/startDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->created_at)->format('l jS \\of F Y')}}</li>
+                          <li class="dateIssued" style="display: none;"><img src="{{ asset('images/fonts/startDate.svg') }}" class="svgIMGcard"/>{{$issue->created_at}}</li>
+
+                          <li><img src="{{ asset('images/fonts/endDate.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::parse($issue->deadline)->format('l jS \\of F Y')}}</li>
+                          <li class="dateTerminated" style="display: none;"><img src="{{ asset('images/fonts/endDate.svg') }}" class="svgIMGcard"/>{{$issue->deadline}}</li>
+
                           <label class="labelStyle">Deadline:</label>
                           <li class="deadline"><img src="{{ asset('images/fonts/deadline.svg') }}" class="svgIMGcard"/>{{Carbon\Carbon::now()->parse($issue->deadline)->diffForHumans()}}</li>
                         <label class="labelStyle">Description:</label>                                                                                                                                                    <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
@@ -109,29 +112,31 @@ var $grid = $('.grid').isotope({
   getSortData: {
     //Sort Name in alphabetical order
     name: '.name',
-    //Sort Issues ending the same day
-    today: function( itemElem ) {
-      var today = $( itemElem ).find('.deadline').text();
-      return today.match( /hours from now/);
-    },
-    //Sort Issues ending the following days
-    tomorrow: function( itemElem ) {
-      var name = $( itemElem ).find('.deadline').text();
-      return name.match( /1 day from now/ );
-    },
     //Sort Issued based on the date they were created
     dateIssued: function( itemElem ) {
       var dateIssued = $( itemElem ).find('.dateIssued').text();
-      //alter dateIssued by making in into integer and then sort
-      return dateIssued;
+      var intDateIssued = Date.parse(dateIssued);
+      //console.log(intDateIssued);
+      return intDateIssued;
     },
     //Sort Issued based on the date they end
     dateTerminated: function( itemElem ) {
       var dateTerminated = $( itemElem ).find('.dateTerminated').text();
-      //alter dateTerminated by making in into integer and then sort
-      return dateTerminated;
+      var intDateTerminated = Date.parse(dateTerminated);
+      console.log(intDateTerminated);
+      return intDateTerminated;
     },
+  },
+  sortAscending: {
+    name: true,
+    dateIssued: true,
+    dateTerminated: true
   }
+});
+
+//Keep randoming when the button is clicked not jsut once
+$('.shuffle-button').on( 'click', function() {
+  $grid.isotope('shuffle');
 });
 
 // bind filter button click
@@ -141,21 +146,6 @@ $('#filters').on( 'click', 'button', function() {
   filterValue = filterFns[ filterValue ] || filterValue;
   $grid.isotope({ filter: filterValue });
 });
-
-
-// filter functions
-var filterFns = {
-  // show if number is greater than 50
-  upcoming: function() {
-    var number = $(this).find('.number').text();
-    return parseInt( number, 10 ) > 50;
-  },
-  // show if name ends with -ium
-  ium: function() {
-    var name = $(this).find('.deadline').text();
-    return name.match( /1 day from now/ );
-  }
-};
 
 
 // bind sort button click
