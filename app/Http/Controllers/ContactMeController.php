@@ -17,6 +17,8 @@ class ContactMeController extends Controller
     public function store(StoreFormValidation $request)
     {
 
+      $subject = $request->subject;
+      
       $data = array(
         'name' => $request->name,
         'email' => $request->email,
