@@ -62,7 +62,7 @@
             <div class="isotope-item col-lg-4 col-md-6 col-sm-12 col-xs-12 wow fadeInUp element-item {{$issue->priority}}" data-wow-delay=".2s">
               <div class="card-group">
                 <div class="card">
-                  <div class="thumbnail"><a class="img-link" href="/issues/{{$issue->id}}"><img src="{{ asset('images/home/contractthumb.jpg') }}"/><span class="thumbnail-price prio">{{$issue->priority}}<span class="mon"> Priority</span></span></a></div>
+                  <div class="thumbnail"><a class="img-link" href="/issues/{{$issue->id}}"><img src="{{ asset('images/home/contractthumb.jpg') }}"/><span class="thumbnail-price prio" id="{{$issue->priority}}">{{$issue->priority}}<span class="mon"> Priority</span></span></a></div>
                     <div class="card-body">
                       <div class="caption">
                         <h4 class="name">{{$issue->name}}</h4>
@@ -134,6 +134,10 @@ var $grid = $('.grid').isotope({
   }
 });
 
+// filter functions
+var filterFns = {
+};
+
 //Keep randoming when the button is clicked not jsut once
 $('.shuffle-button').on( 'click', function() {
   $grid.isotope('shuffle');
@@ -162,7 +166,6 @@ $('.button-group').each( function( i, buttonGroup ) {
     $( this ).addClass('is-checked');
   });
 });
-
 
 </script>
 

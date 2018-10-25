@@ -133,6 +133,16 @@
   transition: 0.3s;
 }
 
+#High {
+  background-color: #ff0000;
+}
+#Medium {
+  background-color: #ff8000;
+}
+#Low {
+  background-color: #428EFE;
+}
+
 .thumbnail .img-link .thumbnail-price .mon {
   font-size: 14px;
 }
