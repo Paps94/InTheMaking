@@ -49,7 +49,7 @@
                         <div class="navbar navbar-cus">
 
                             <div class="navbar-header">
-                                <a href="/issues" class="navbar-brand">#Logo</a>
+                                <a href="/tmissues" class="navbar-brand">#Logo</a>
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
@@ -486,9 +486,9 @@
                 <!-- About a 3 coloumn view on all screens -->
                 <div class="col-sm-4 col-md-6 col-lg-4">
                     <!-- Small animation when hovering over image -->
-                    <div class="gallery-items wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="wow fadeInLeft" data-wow-delay="0.2s">
                         <!-- Image after mouse click -->
-                        <a class="view img" href="images/SVGs/InTheMakingAttempt2.svg">
+                        <a class="" href="images/SVGs/InTheMakingAttempt2.svg">
                             <!-- Preview image -->
                             <img src="{{ asset('images/SVGs/InTheMakingAttempt2.svg') }}" alt="One Perfect Night">
                         </a>
@@ -727,7 +727,13 @@
     </div>
 
     <!--Footer Area Ends-->
+<script>
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+              event.preventDefault();
+              $(this).ekkoLightbox();
+          });
 
+</script>
 
 <script src="{{ asset('js/particles.js') }}"></script>
 <script>
