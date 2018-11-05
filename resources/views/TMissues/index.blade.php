@@ -26,7 +26,7 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
-                <span class="important">Task Managment...</span>
+                <span class="important">Task Management...</span>
                 </div>
                 <a class="btn btn-danger btn-lg addIssue" href="{{ route('tmissues.create') }}" role="button">Add New Task</a>
               </div>
