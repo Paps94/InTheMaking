@@ -118,7 +118,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-5 col-md-5">
                     <div class="about-left wow fadeInDown" data-wow-delay="0.4s">
-                        <img src="{{ asset('images/about/ProfilePic2.1.jpg') }}" alt="A pretty face">
+                        <img src="{{ asset('images/about/4.jpg') }}" alt="A pretty face">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-7 col-md-7">
@@ -187,6 +187,18 @@
                 <div class="col-md-6">
                     <h5>Experience</h5>
                     <div class="timeline">
+                      <div class="wrapper right">
+                          <div class="content">
+                              <div class="experience-area wow fadeInDown" data-wow-delay="0.4s">
+                                  <h6>September 2018 - January 2018</h6>
+                                  <h4 class="mb-2">zzDot</h4>
+                                  <h3 class="mb-2">Web Developer</h3>
+                                  <p>Accepted a 4 month internship contract at this digital marketing agency in order to get a better grasp of how the real world works in regards to clients, deadlines and most importantly budgets!
+                                  I can finally and honestly say that I now understand what my professors for a Software Engineering module back in uni meant when literally, the first thing he mentioned was : "In this module we
+                                  will learn how a project is supposed to be developed from start to finish to finish but just like dinosours these things don't exist in the real world anymore, only in our imagination!" </p>
+                              </div>
+                          </div>
+                      </div>
                         <div class="wrapper right">
                             <div class="content">
                                 <div class="experience-area wow fadeInDown" data-wow-delay="0.4s">
