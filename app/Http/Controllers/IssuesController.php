@@ -120,7 +120,7 @@ class IssuesController extends Controller
          flash()->success('Success!!!', 'Issue fixed!! You the man!');
          return redirect()->route('issues.index');
      }
-     flash()->success('!! Error !!', 'Issue unable to be removed.');
+     flash()->error('!! Error !!', 'Issue unable to be removed.');
      return back();
 
     }
