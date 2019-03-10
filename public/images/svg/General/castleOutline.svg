@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 235.9 147.3" style="enable-background:new 0 0 235.9 147.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#DBDBDB;stroke-width:4;stroke-miterlimit:10;}
+	.st1{fill:#DBDBDB;}
+</style>
+<g id="Castle">
+	<polygon class="st0" points="81.6,35.6 92.5,35.6 87.1,55.6 81.6,59.2 87.1,128.2 47.1,128.2 54.4,59.2 45.3,55.6 41.7,35.6 
+		54.4,35.6 54.4,41.1 63.5,41.1 63.5,35.6 70.7,35.6 70.7,41.1 81.6,41.1 	"/>
+	<polygon class="st0" points="183.3,35.6 194.2,35.6 188.7,55.6 183.3,59.2 188.7,128.2 148.8,128.2 156.1,59.2 147,55.6 
+		143.4,35.6 156.1,35.6 156.1,41.1 165.1,41.1 165.1,35.6 172.4,35.6 172.4,41.1 183.3,41.1 	"/>
+	<polygon class="st0" points="123.4,62.8 130.6,62.8 130.6,66.5 141.5,66.5 141.5,62.8 148.8,62.8 143.4,128.2 94.3,128.2 
+		88.9,62.8 96.2,62.8 96.2,66.5 107,66.5 107,62.8 114.3,62.8 114.3,66.5 123.4,66.5 	"/>
+	<polygon class="st0" points="130.6,6.6 141.5,6.6 137.9,26.5 132.5,30.2 137.9,55.6 98,55.6 103.4,30.2 96.2,26.5 90.7,6.6 
+		103.4,6.6 103.4,12 114.3,12 114.3,6.6 121.6,6.6 121.6,12 130.6,12 	"/>
+	
+		<rect x="114.3" y="30.2" transform="matrix(1 -5.304683e-03 5.304683e-03 1 -0.2068 0.6263)" class="st0" width="7.3" height="18.2"/>
+	<rect x="114.3" y="75.5" class="st0" width="7.3" height="10.9"/>
+	<path class="st0" d="M103.4,104.6c0-7.3,7.3-12.7,14.5-12.7l0,0c9.1,0,14.5,5.4,14.5,12.7v18.2h-29.1L103.4,104.6"/>
+	<rect x="63.5" y="61" class="st0" width="7.3" height="18.2"/>
+	<rect x="165.1" y="61" class="st0" width="7.3" height="18.2"/>
+	<rect x="45.1" y="133.5" class="st1" width="145.8" height="5.7"/>
+</g>
+</svg>

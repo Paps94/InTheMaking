@@ -1,0 +1,861 @@
+/* =================================================
+
+Author: Antreas Papdopoulos
+Version: 1.0
+
+NB: This is the main stylesheet of this theme.
+
+=================================================== */
+
+/*
+Table of content
+
+1. Default css
+2.
+3. Nav area css
+4. Mouse Animate Icon css
+5. Banner area css
+6. About area css
+7. The Range area css
+8. Cocktail Fusion area css
+12. Contact area css
+13. Footer area css
+14. Random minor stuff
+
+*/
+
+
+/*---------- 1. Default css starts ------------*/
+
+html,body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #3b3b3b;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #3b3b3b;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 20px;
+    text-transform: none;
+}
+
+p {
+    letter-spacing: 0;
+    line-height:1.8;
+}
+
+a{
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+a:focus{
+    outline:none;
+    text-decoration: none;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-padding{
+    padding: 50px 0;
+}
+
+.line1 {
+    height: 2px;
+    width: 200px;
+    background: #FDB813;
+    margin: auto;
+}
+
+.line2 {
+    height: 2px;
+    width: 150px;
+    background: #3b3b3b;
+    margin: 15px auto;
+}
+
+/*---------- default css ends ------------*/
+
+/*-------------- 2. Hero Image css starts ---------------*/
+
+#wrapper {
+    width: 120%;
+    height: 100vH;
+    position: relative;
+    background-image: url("../images/sky.png");
+    background-repeat:no-repeat;
+    overflow: hidden;
+}
+
+.parallax {
+    position: absolute;
+}
+
+#castle1 {
+  right: 100px;
+  bottom: -50px;
+  width: 100%;
+  height: 100%;
+}
+
+#castle2 {
+  right: 100px;
+  bottom: -50px;
+  width: 100%;
+  height: 100%;
+}
+
+#star3 {
+    bottom: 20px;
+    right: 20px;
+}
+
+#star4 {
+    top: 40px;
+    left: 290px;
+}
+
+#star5 {
+    bottom: 138px;
+    left: 170px;
+}
+
+#planet {
+    top: 103px;
+    left: 103px;
+}
+
+#robot {
+    top: 200px;
+    right: 250px;
+}
+
+#astronaut {
+    top: 220px;
+    right: 100px;
+}
+
+#asteroid {
+    bottom: 310px;
+    right: 310px;
+}
+
+#logo {
+  width: 500px;
+  height: 450px;
+  left: 0;
+  top: 0;
+}
+
+/*---------- Hero Image css ends -------------*/
+
+/*---------- 3. Nav area css starts -------------*/
+
+.nav-area{
+    height: 65px;
+}
+
+.nav-area.sticky_navigation{
+    background: #FDB813;
+    height: 55px;
+}
+
+.sticky_navigation{
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out ;
+    -ms-transition: all 0.4s ease-out ;
+    -o-transition: all 0.4s ease-out ;
+    transition: all 0.4s ease-out ;
+    -webkit-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+    box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25);
+}
+
+.sticky_navigation .main-menu{
+    margin-top: 0;
+}
+
+.sticky_navigation .navbar-brand, .sticky_navigation .navbar-brand span {
+    color: #fff;
+}
+
+.sticky_navigation .navbar-brand:hover, .sticky_navigation .navbar-brand:focus, .sticky_navigation .navbar-brand span {
+    color: #fff;
+}
+
+.sticky_navigation .nav li a {
+    color: #fff;
+}
+
+.sticky_navigation .nav li.active a{
+    color: #fff;
+}
+
+.sticky_navigation .navbar-brand:hover{
+    color: #333;
+}
+
+.main-menu{
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    -ms-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    margin-top: 10px;
+}
+
+.navbar{
+    border:0;
+    margin-bottom: 0;
+    background-color: #f5f8fa;
+    border-bottom: 5px solid #dbdbdb;
+    z-index: 9999;
+}
+
+.navbar-brand{
+  height: auto;
+  width: 75px;
+}
+
+.navbar-brand:focus, .navbar-brand:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar-nav {
+  font-family: "PrinceValiant";
+  font-size: 22px;
+  font-weight: 600;
+
+}
+
+.navbar-right li{
+    display: inline-block;
+    float: none;
+}
+
+.navbar-right li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.navbar-right li a:hover{
+    color: #333;
+}
+
+.navbar-right li.active a{
+    font-weight: bold;
+    color: #fff;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #fff;
+}
+
+.nav > li > a {
+  margin-top: 2px;
+  padding: 15px 10px;
+}
+
+.nav > li > a:hover,
+.nav > li > a:active,
+.nav > li > a:focus{
+    background: none;
+}
+
+.navbar-toggle .icon-bar{
+    background: #777777;
+}
+
+/*---------- Nav area css ends -------------*/
+
+/*----------- 4. Mouse Animate Icon Starts ------------------*/
+
+.mouse-icon {
+    position: absolute;
+    left: 50%;
+    bottom: -160px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    height: 50px;
+    width: 30px;
+    margin-left: -17px;
+    display: block;
+    z-index: 10;
+}
+
+.mouse-icon .wheel {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    width: 4px;
+    height: 10px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes drop	{
+    0%   { top:5px;  opacity: 0;}
+    30%  { top:10px; opacity: 1;}
+    100% { top:25px; opacity: 0;}
+}
+
+/* --------- Mouse Animate Icon ends -------------- /*
+
+/* --------- 5. Banner area css starts -----------*/
+
+@font-face {
+    font-family: PrinceValiant;
+    src: url('/fonts/PrinceValiant.ttf');
+}
+.section-title {
+  line-height: 1;
+  font-size: 90px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #676767;
+  margin-bottom: 10px;
+}
+
+.title{
+  font-family: "Sarabun";
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3b3b3b;
+  margin: 30px auto;
+}
+
+.primary-text {
+  color: #FDB813;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.text {
+  font-family: "Nunito";
+  font-size: 22px;
+  text-align: justify;
+}
+
+.pull-up
+{
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+.pull-up:hover
+{
+    z-index: 999;
+
+    -webkit-transform: translateY(-4px) scale(1.02);
+       -moz-transform: translateY(-4px) scale(1.02);
+        -ms-transform: translateY(-4px) scale(1.02);
+         -o-transform: translateY(-4px) scale(1.02);
+            transform: translateY(-4px) scale(1.02);
+
+    -webkit-box-shadow: 0 4px 24px rgba(62, 57, 107, .5);
+            box-shadow: 0 4px 24px rgba(62, 57, 107, .5);
+}
+
+.fixed-height {
+  min-height: 140px;
+  max-height: 140px;
+  margin: 20px auto;
+}
+
+.fixed-height-contact {
+  min-height: 220px;
+  max-height: 220px;
+  margin: 20px auto;
+}
+
+/* --------------  Banner area css ends --------------- */
+
+/*---------------6. About area starts ----------------*/
+
+.about-left {
+    -webkit-box-shadow: 10px 10px 1px #c6c6c6,20px 20px 1px #dddddd;
+    -moz-box-shadow: 10px 10px 1px #c6c6c6,20px 20px 1px #dddddd;
+    box-shadow: 10px 10px 1px #c6c6c6,20px 20px 1px #dddddd;
+    background-image: url("../images/about/ProfilePic2.1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about-right {
+    padding: 2% 5%;
+}
+.about-right h1 {
+    border-left: 3px solid #FDB813;
+    padding-left: 15px;
+    font-size: 30px;
+    line-height:40px;
+}
+.text-primary {
+    color: #FDB813;
+}
+
+.face-button {
+  height: 44px;
+  display: inline-block;
+  border: 3px solid #FDB813;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  overflow: hidden;
+}
+
+.face-button .icon {
+  margin-right: 3px;
+}
+.face-button .face-primary,
+.face-button .face-secondary {
+  display: block;
+  padding: 0 12px;
+  line-height: 44px;
+  background-color: #fff;
+  color: #3b3b3b;
+  text-decoration: none;
+  transition: margin .4s;
+}
+.face-button .face-secondary {
+  font-size: 16px;
+}
+
+.face-button .face-primary {
+  background-color: #fff;
+  color: #3b3b3b;
+}
+.face-button:hover .face-primary {
+  margin-top: -44px;
+}
+
+.libraries {
+  position: absolute;
+  color: #FDB813;
+  font-size: 30px;
+}
+
+.img-logo-left{
+  position: absolute;
+  top: -30px;
+  left: -15px;
+  height: 80px;
+  width: 80px;
+}
+
+.img-logo-lefts{
+  position: absolute;
+  bottom: -22px;
+  left: -10px;
+  height: 80px;
+  width: 80px;
+}
+
+.img-logo-right{
+  position: absolute;
+  bottom: -35px;
+  right: -10px;
+  height: 80px;
+  width: 80px;
+}
+
+.img-logo-rights{
+  position: absolute;
+  top: -15px;
+  right: -20px;
+  height: 80px;
+  width: 80px;
+}
+
+/*------- 7. The Range area css starts -------*/
+
+
+.rangeContent{
+  text-align: center;
+}
+
+.rangeContent p {
+  font-size: 14px;
+}
+
+.rangeBottles{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*------ The Range area ends ---------*/
+
+/*---------------8. Cocktail Fusion area Starts--------------*/
+
+.services-area {
+    background-color: #eeeeee;
+}
+
+.services-content p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.single-services {
+    padding: 40px 20px;
+    box-shadow: rgba(58,78,95,0.2) 0 10px 16px, rgba(58,78,95,0.05) 0 -5px 16px;
+    margin-bottom: 15px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    background-color: #f5f8fa;
+    border: 2px solid #3b3b3b;
+}
+
+.single-services:hover{
+    box-shadow: 1px 3px 4px 5px rgba(199,199,199,.8);
+    transition: ease .09s;
+}
+
+.single-services:hover{
+    border: 2px solid #FDB813;
+    -webkit-transition: .3s;
+    -moz-transition: .3s ;
+    -ms-transition: .3s ;
+    -o-transition: .3s ;
+    transition: .3s ;
+}
+
+.cocktail-image {
+  position: relative;
+  background-size: contain;
+  width: 300px!important;
+  height: 300px;
+}
+
+/*--------------- Cocktail Fusion area ends --------------*/
+
+
+/*-------------13. Contact area starts -------------*/
+
+.contactSVG{
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+/*------------- Contact area ends -------------*/
+
+/*--------------13. Footer area starts -------------*/
+
+
+.footer-area {
+    background: #3b3b3b;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.footer-area a{
+    color: #FDB813;
+}
+.footer-area p {
+  margin: 0;
+}
+
+.fcontent > div {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 33%;
+    text-align: center;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left, .right {
+  width: 15%;
+}
+.middle {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*--------------- Footer area ends -------------*/
+
+/*--------------14. Random minor stuff starts -------------*/
+
+#ClickMe {
+  color: #3b3b3b;
+}
+
+#ClickMe:hover{
+  color: #FDB813;
+  cursor: pointer;
+  text-decoration: line-through;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 1.5s infinite;
+    -moz-animation: blink 1.5s infinite;
+    animation: blink 1.5s infinite;
+}
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-webkit-keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/*--------------- Random minor stuff ends -------------*/
+
+/*--------------15. SCrollbar starts -------------*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #FDB813;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7395ae;
+}
+/*--------------- Random minor stuff ends -------------*/
+.fa-chevron-right::before {
+    position: absolute;
+    bottom: 5px;
+    right: 9px;
+}
+
+.fa-chevron-left::before {
+    position: absolute;
+    bottom: 5px;
+    left: 9px;
+}
+
+.top-left {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+}
+
+.slide-container {
+  margin: auto;
+  width: 600px;
+  text-align: center;
+}
+
+.wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.wrapper:focus {
+  outline: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.slick-prev {
+  left: 100px;
+  z-index: 999;
+}
+
+.slick-next {
+  right: 100px;
+  z-index: 999;
+}
+
+.hr.has-image {
+    margin: 4.5rem 0;
+    position: relative;
+    display: block;
+    height: 3px;
+}
+
+.logo-svg {
+    height: 100px;
+    position: absolute;
+    width: 10rem;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logo-contact {
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.section-divider {
+  height: 100px;
+  background: #f5f8fa;;
+}
+
+.section-divider::before {
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 45%;
+  background: #dbdbdb;
+
+}
+
+.section-divider::after {
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  width: 45%;
+  background: #dbdbdb;
+}
+
+.hr {
+    margin: 1.5rem 0;
+}
+
+.highlight {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 10px;
+}
+.separator {
+  position: relative;
+  height: 100px;
+}
+.separator::before {
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 45%;
+  background: #FDB813;
+
+}
+
+.separator::after {
+  content: "";
+  display: block;
+  height: 3px;
+  position: absolute;
+  left: 55%;
+  top: 50%;
+  width: 45%;
+  background: #FDB813;
+}
+
+.contactDetails {
+    padding: 20px 10px;
+}
+
+.contact-text {
+    padding-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.emailLink {
+  height: 70px;
+
+}
