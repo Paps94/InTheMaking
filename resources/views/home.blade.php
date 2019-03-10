@@ -118,21 +118,21 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-5 col-md-5">
                     <div class="about-left wow fadeInDown" data-wow-delay="0.4s">
-                        <img src="{{ asset('images/about/4.jpg') }}" alt="A pretty face">
+                        <img src="{{ asset('images/about/vienna.jpg') }}" alt="A pretty face">
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-7 col-md-7">
                     <div class="about-right wow fadeInDown" data-wow-delay="0.8s">
                         <h1>Hi, I'm <span class="text-primary">Antreas Papadopoulos</span></h1>
-                        <p>I'm a 23 year-old  <span id="ClickMe">Computer Science graduate</span>. Ever since graduation I have been working
+                        <p>I'm a 24 year-old <span id="ClickMe">Computer Science graduate</span>. Ever since graduation, I have been working
                           on personal projects which include a decentralized web app called <span class="text-primary">Balloo</span> as part of my dissertation and this personal website of mine.
                            I have a decent knowledge in <span class="text-primary">HTML, Css, PHP, Laravel (PHP framewok)</span> and I have been looking more into Javascript and JQuery.
                         </p>
-                         <p>Although I don't have any knowledge when it comes to mobile application development, I always strive to create high quality, fully responsive and tested services in a wide range
-                            of devices, even though browser support can be a nightmare on a daily basis!
+                         <p>Although I don't have any knowledge when it comes to mobile application development, I always strive to create high quality, fully responsive and tested services on a wide range
+                            of devices, even though browser support can be a nightmare on a constant basis!
                          </p>
-                         <p>As a programmer, I tend to use a variety of libraries and toolkits (everything being MIT licensed) to aid me in my final result instead of making my own from scratch;
-                           no point to reinvent the wheel now is there? In this project some examples would be: <br> <span class="libraries"></span> <br>
+                         <p>As a programmer, I tend to use a variety of libraries and toolkits (everything being MIT licensed) to aid me in my final result, instead of making my own from scratch.
+                           There is no point to reinvent the wheel now is there? (depends on the project of course) The final result you see in this website includes: <br> <span class="libraries"></span> <br>
                          </p>
                     </div>
 
@@ -190,22 +190,34 @@
                       <div class="wrapper right">
                           <div class="content">
                               <div class="experience-area wow fadeInDown" data-wow-delay="0.4s">
-                                  <h6>September 2018 - January 2018</h6>
+                                  <h6>March 2019 - Today</h6>
+                                  <h4 class="mb-2">Customs Clearance Ltd</h4>
+                                  <h3 class="mb-2">Junior Systems Engineer</h3>
+                                  <p>I landed my first full time job as a Junior Systems Engineer at a logistics company! Yes, it's not a tech company BUT I have an awesome feeling
+                                  that this job will help me become a great developer. I am fortunate enough to work under two much more experienced programmers that help me when I
+                                  find myself stuck on something and allow me to pick their brains on a daily basis!</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="wrapper right">
+                          <div class="content">
+                              <div class="experience-area wow fadeInDown" data-wow-delay="0.4s">
+                                  <h6>September 2018 - January 2019</h6>
                                   <h4 class="mb-2">zzDot</h4>
                                   <h3 class="mb-2">Web Developer</h3>
-                                  <p>Accepted a 4 month internship contract at this digital marketing agency in order to get a better grasp of how the real world works in regards to clients, deadlines and most importantly budgets!
-                                  I can finally and honestly say that I now understand what my professors for a Software Engineering module back in uni meant when literally, the first thing he mentioned was : "In this module we
-                                  will learn how a project is supposed to be developed from start to finish to finish but just like dinosours these things don't exist in the real world anymore, only in our imagination!" </p>
+                                  <p>I accepted a 4 month internship contract at zzDot digital marketing agency in order to get a better grasp of how the real world works in regards to clients, deadlines and most importantly, budgets!
+                                  I can finally and honestly say that I can now understand what my professor for my Software Engineering module back in uni meant when literally, the first thing he mentioned was : "In this module we
+                                  will learn how a project is supposed to be developed from start to finish, but just like dinosaurs these things don't exist in the real world anymore, only in our imagination!" </p>
                               </div>
                           </div>
                       </div>
                         <div class="wrapper right">
                             <div class="content">
                                 <div class="experience-area wow fadeInDown" data-wow-delay="0.4s">
-                                    <h6>August 2018 - Present</h6>
+                                    <h6>August 2018 - September 2018</h6>
                                     <h4 class="mb-2">Freelancer</h4>
                                     <h3 class="mb-2">Web Developer</h3>
-                                    <p>Small Projects here and there, mainly designing and setting up websites for clients</p>
+                                    <p>Small projects here and there, mainly designing and setting up websites for clients</p>
                                 </div>
                             </div>
                         </div>
@@ -215,7 +227,7 @@
                                   <h6>March 2018 - July 2018</h6>
                                   <h4 class="mb-2">University of Liverpool - Computing services</h4>
                                   <h3 class="mb-2">AV Student support</h3>
-                                  <p>Providing technical support using University systems and equipment. Responsible for the maintenance and upgrade of certain building equipment. Aimed to improve the teaching experience to both the lecturers and the students</p>
+                                  <p>Providing technical support to both students and lecturers using University systems and equipment. Responsible for the maintenance and upgrading of certain building equipment. Aimed to improve the teaching experience to both lecturers and students</p>
                                 </div>
                             </div>
                         </div>
@@ -666,12 +678,12 @@
                                  <div class="top-contact-text wow fadeInDown" data-wow-delay="0.2s">
                                      <div class="contact-icon">
                                          <ul>
-                                             <li><a href="https://www.google.com/maps/search/?api=1&query=Nevern+Roa%2C+SW59PJ" target="_blank"><img src="{{ asset('images/portfolio/icons/home.svg') }}" class="svgContact"/></a></li>
+                                             <li><img src="{{ asset('images/portfolio/icons/home.svg') }}" class="svgContact"/></li>
                                          </ul>
                                      </div>
 
-                                     <h2>Address / Street</h2>
-                                     <p>Nevern Road, SW5 9PJ, London</p>
+                                     <h2>Address</h2>
+                                     <p>London, UK</p>
                                  </div>
                              </div>
                              <div class="col-sm-3 col-md-3">
@@ -702,7 +714,7 @@
                                  <div class="top-contact-text wow fadeInDown" data-wow-delay="0.6s">
                                      <div class="contact-icon">
                                          <ul>
-                                             <li><a href="#contact"><img src="{{ asset('images/portfolio/icons/socialmedia.svg') }}" class="svgContact"/></a></li>
+                                             <li><img src="{{ asset('images/portfolio/icons/socialmedia.svg') }}" class="svgContact"/></li>
                                          </ul>
                                      </div>
 
