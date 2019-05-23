@@ -53,15 +53,12 @@
         <!-- ==================================== end of CSS ==================================== -->
 
     </head>
-    <body style="height: 4000px">
+    <body style="height: 5000px; overflow-x: hidden;">
       <section id="home" class="intro">
         <div id="wrapper">
-          <img id="castle1"  class="parallax" src="images/castle1.png">
-          <img id="castle2"  class="parallax" src="images/castle2.png">
-          <img id="ground"   class="parallax" src="images/star3.png">
-          <img id="sword"    class="parallax" src="images/star5.png">
-          <img id="bottle"   class="parallax" src="images/star4.png">
-          <img id="logo"     class="parallax" src="images/svg/Logo/LogoFull.svg">
+          <img class="parallax" id="castle1" src="images/castle1.png">
+          <img class="parallax" id="castle2" src="images/castle2.png">
+          <img class="parallax" id="bottle" src="images/bottle.png">
         </div>
       </section>
       <nav class="navbar sticky-top navbar-expand-md navbar-light top-navbar" data-toggle="sticky-onscroll">
@@ -86,7 +83,7 @@
 
       <section id="about" class="about section-padding">
         <div class="container">
-          <div class="section-title"> About </div>
+          <div class="section-title"> The Real Scottish Spirit </div>
           <p class="line1"></p>
           <p class="line2"></p>
           <div class="story">
@@ -205,7 +202,7 @@
               <div class="section-title">Cocktail Fusion</div>
               <p class="line1"></p>
               <p class="line2"></p>
-              <p style="text-align: center">*If you want to read any of the cocktails, just hover over it and the autoplay will stop*</p>
+              <p style="text-align: center">*If you want to read any of the cocktail recipes, just hover over it and the autoplay will stop*</p>
               <a class="btn carouselBtn play"> Play <i class="fas fa-play" style="margin-left: 10px;"></i></a>
               <a class="btn carouselBtn stop"> Pause <i class="fas fa-pause" style="margin-left: 10px;"></i></a>
             </div>
@@ -215,116 +212,80 @@
           <div id="services-carousel" class="owl-carousel owl-theme">
             <!-- First Cocktail-->
             <div class="single-services text-center item" style="margin: 0 15px 15px;">
-              <img class="cocktail-image" src="images/cocktails/The-Witty-Comeback.jpg" />
+              <img class="cocktail-image" src="images/cocktails/king-of-the-castle.jpg" />
               <div class="services-content">
-                  <div class="highlight">The Witty Comeback</div> <!--edit the service you give-->
-                  <div class="clash-card__level clash-card__level--barbarian top-left">1/5</div>
+                  <div class="highlight">The King of the Castle</div>
+                  <div class="clash-card__level clash-card__level--barbarian top-left">1/3</div>
                   <hr>
-                  <h5 style="text-transform: capitalize;">Ingredients</h5>
+                  <h5>Ingredients</h5>
                   <ul class=" text-left" style="margin-left: 15px;">
-                    <li>2 oz Old Dumbreck</li>
-                    <li>½ ounce Averna amaro</li>
-                    <li>½ ounce fresh lemon juice</li>
-                    <li>½ ounce Ginger Simple Syrup</li>
-                    <li>Orange twist (for serving)</li>
+                    <li>1 tbsp raw or granulated sugar</li>
+                    <li>3 dashes bitters</li>
+                    <li>2 ounces whiskey</li>
+                    <li>Orange wedge (for serving)</li>
+                    <li>Maraschino cherry (for serving; optional)</li>
                   </ul>
                   <hr>
-                  <h5 style="text-transform: capitalize;">Summary</h5>
-                  <p>This is an example of a house cocktail with three key elements: accessible main ingredients (rye and lemon), something homemade (ginger syrup), and something a little obscure (Averna amaro).</p>
+                  <h5>Preparation</h5>
+                  <p>
+                    Stir sugar, bitters, and 2 tsp. warm water in a rocks glass until most of the sugar is dissolved.
+                    Add 3 ice cubes and pour rye over. Stir 20 seconds to chill cocktail and dilute whisky. Garnish with
+                    orange wedge and cherry, if using.
+                  </p>
               </div>
             </div>
 
             <!-- Second Cocktail-->
             <div class="single-services text-center item" style="margin: 0 15px 15px;">
-              <img class="cocktail-image" src="images/cocktails/libertine.jpg" />
+              <img class="cocktail-image" src="images/cocktails/the-noble-knight.jpg" />
               <div class="services-content">
-                  <div class="highlight">The Libertine</div>
-                  <div class="clash-card__level clash-card__level--barbarian top-left">2/5</div>
+                  <div class="highlight">The Noble Knight</div>
+                  <div class="clash-card__level clash-card__level--barbarian top-left">2/3</div>
                   <hr>
-                  <h5 style="text-transform: capitalize;">Ingredients</h5>
+                  <h5>Ingredients</h5>
                   <ul class=" text-left" style="margin-left: 15px;">
-                    <li>4 oz Old Dumbreck</li>
-                    <li>2 oz simple syrup</li>
-                    <li>2 sprigs fresh rosemary</li>
-                    <li>2 oz fresh lemon juice</li>
-                    <li>2 tsp orange marmalade</li>
-                    <li>1 tbsp maple syrup</li>
-                    <li>1 tbsp fresh orange juice</li>
-                    <li>1 egg white</li>
+                    <li>2 ounces whiskey</li>
+                    <li>¾ ounce fresh lemon juice</li>
+                    <li>¾ ounce simple syrup</li>
+                    <li>½ orange wheel (for serving)</li>
+                    <li>Maraschino cherry (for serving)</li>
                   </ul>
                   <hr>
-                  <h5 style="text-transform: capitalize;">Summary</h5>
-                  <p>Essentially just whiskey, lemon or lime juice and simple syrup, the tartness of the citrus is a wonderful match to some of the sweet notes in whiskey. This is a perfectly easy drink that works with a great variety of whiskies.</p>
+                  <h5>Preparation</h5>
+                  <p>
+                    Combine our whisky, lemon juice, and simple syrup in a cocktail shaker. Fill shaker with ice, cover, and shake
+                    vigorously until outside of shaker is very cold, about 20 seconds. Strain cocktail through a Hawthorne strainer
+                    or a slotted spoon into an old-fashioned or rocks glass filled with ice. Garnish with orange wheel and cherry.
+                  </p>
               </div>
             </div>
 
             <!-- Third Cocktail-->
             <div class="single-services text-center item" style="margin: 0 15px 15px;">
-              <img class="cocktail-image" src="images/cocktails/nelie.jpg" />
+              <img class="cocktail-image" src="images/cocktails/the-scottish-heritage.jpg" />
               <div class="services-content">
-                  <div class="highlight">The Nellie Kuh</div>
-                  <div class="clash-card__level clash-card__level--barbarian top-left">3/5</div>
+                  <div class="highlight">The Scottish Heritage</div>
+                  <div class="clash-card__level clash-card__level--barbarian top-left">3/3</div>
                   <hr>
-                  <h5 style="text-transform: capitalize;">Ingredients</h5>
+                  <h5 style="text-transform: uppercase;">Ingredients</h5>
                   <ul class=" text-left" style="margin-left: 15px;">
-                    <li>1 tbsp very finely chopped crystallized ginger</li>
-                    <li>1 tbsp sugar</li>
-                    <li>Lime wedge (for glass)</li>
-                    <li>2 ½ oz Old Dumbreck</li>
-                    <li>1 oz fresh lime juice</li>
-                    <li>½ oz. Ginger Syrup</li>
-                    <li>¼ teaspoon orange-flower water</li>
+                    <li>2 ounces whisky</li>
+                    <li>2 ounces apple cider</li>
+                    <li>1 ounce apple cider vinegar</li>
+                    <li>1 teaspoon pure maple syrup</li>
+                    <li>1/8 teaspoon cayenne pepper</li>
+                    <li>A few dashes angostura bitters</li>
+                    <li>Orange twist (for garnish)</li>
                   </ul>
                   <hr>
-                  <h5 style="text-transform: capitalize;">Summary</h5>
-                  <p>Ginger, lime, and orange blossom add tropical flavors to this slightly spicy and pleasantly floral cocktail.</p>
+                  <h5>Preparation</h5>
+                  <p>
+                    Combine apple cider, whiskey, vinegar, maple syrup, and cayenne in a cocktail shaker; fill shaker with ice. Shake
+                    until outside of shaker is frosty, about 30 seconds. Strain into a rocks glass filled with ice, top with bitters,
+                    and garnish with orange twist.
+                  </p>
               </div>
             </div>
-
-            <!-- Forth Cocktail-->
-            <div class="single-services text-center item" style="margin: 0 15px 15px;">
-              <img class="cocktail-image" src="images/cocktails/whisky-collins.jpg" />
-              <div class="services-content">
-                  <div class="highlight">Whisky Collins</div>
-                  <div class="clash-card__level clash-card__level--barbarian top-left">4/5</div>
-                  <hr>
-                  <h5 style="text-transform: capitalize;">Ingredients</h5>
-                  <ul class=" text-left" style="margin-left: 15px;">
-                    <li>1/3 cup sugar</li>
-                    <li>2 cups Old Dumbreck whisky</li>
-                    <li>1 cup fresh lemon juice (from about 5 lemons)</li>
-                    <li>1 12-oz can club soda</li>
-                    <li>Lemon twists (optional; for serving)</li>
-                  </ul>
-                  <hr>
-                  <h5 style="text-transform: capitalize;">Summary</h5>
-                  <p>This riff on a Tom Collins calls for Japanese whisky, which is known for being exceptionally balanced and smooth. Your favorite Scotch whisky is a good substitute.</p>
-              </div>
-            </div>
-
-            <!-- Fifth Cocktail-->
-            <div class="single-services text-center item" style="margin: 0 15px 15px;">
-              <img class="cocktail-image" src="images/cocktails/the-rattlesnake.jpg" />
-              <div class="services-content">
-                  <div class="highlight">The Rattlesnake</div>
-                  <div class="clash-card__level clash-card__level--barbarian top-left">5/5</div>
-                  <hr>
-                  <h5 style="text-transform: capitalize;">Ingredients</h5>
-                  <ul class=" text-left" style="margin-left: 15px;">
-                    <li>½ cup sugar</li>
-                    <li>4 large egg whites*, separated individually</li>
-                    <li>8 oz Old Dumbreck whiskey</li>
-                    <li>4 oz fresh lemon juice</li>
-                    <li>Pernod or absinthe (for serving)</li>
-                    <li>½ oz. Ginger Syrup</li>
-                    <li>¼ teaspoon orange-flower water</li>
-                  </ul>
-                  <hr>
-                  <h5 style="text-transform: capitalize;">Summary</h5>
-                  <p>The double-shake method is key to this cocktail’s texture. The first round is to break up the egg white; the second is to chill and froth the drink.</p>
-              </div>
-            </div>
-
           </div>
         </div>
       </div>
@@ -436,8 +397,8 @@
         autoplay: true,
         dots: true,
         navText: [
-          "<i class='fa fa-chevron-left'></i>",
-          "<i class='fa fa-chevron-right'></i>"
+          "<p class=\"navigation\"><i class=\"fas fa-arrow-left\"></i></p>",
+          "<p class=\"navigation\"><i class=\"fas fa-arrow-right\"></i></p>"
           ],
         singleItem: true,
         loop: true,
@@ -449,7 +410,7 @@
                 items:1
             },
             1000:{
-                items:3
+                items:2
             }
         }
     });
@@ -470,9 +431,7 @@
       elms: [
         {el: $('#castle1'), rate: 0.2},
         {el: $('#castle2'), rate: 0.2},
-        {el: $('#ground'), rate: 0.2},
-        {el: $('#sword'), rate: 0.3},
-        {el: $('#bottle'), rate: 0.4}
+        {el: $('#bottle'), rate: 0.9}
       ]
   });
 </script>

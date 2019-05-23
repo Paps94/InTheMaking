@@ -155,9 +155,5 @@ $(document).ready(function () {
        window.open(url,'Image','width=largeImage.stylewidth,height=largeImage.style.height,resizable=1');
     }
 
-    function goBack() {
-		    window.history.back();
-		}
-
 
 });

@@ -255,6 +255,10 @@ img {
     color: #557a95;
 }
 
+.sticky_navigation .navbar-right li a:hover{
+    color: #fff;
+}
+
 .navbar-right li.active a{
     font-weight: bold;
     color: #fff;
