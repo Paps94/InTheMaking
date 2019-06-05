@@ -55,11 +55,7 @@
     </head>
     <body style="height: 5000px; overflow-x: hidden;">
       <section id="home" class="intro">
-        <div id="wrapper">
-          <img class="parallax" id="castle1" src="images/castle1.png">
-          <img class="parallax" id="castle2" src="images/castle2.png">
-          <img class="parallax" id="bottle" src="images/bottle.png">
-        </div>
+        <img class="heroImage"  src="images/RangeBottles/heroImage.jpg">
       </section>
       <nav class="navbar sticky-top navbar-expand-md navbar-light top-navbar" data-toggle="sticky-onscroll">
         <div class="container">

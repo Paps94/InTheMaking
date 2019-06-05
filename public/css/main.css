@@ -108,33 +108,13 @@ img {
 
 /*-------------- 2. Hero Image css starts ---------------*/
 
-#wrapper {
-    width: 120%;
-    height: 100vH;
-    position: relative;
-    background-image: url("../images/sky.png");
-    background-repeat:no-repeat;
-    overflow: hidden;
-}
-
-#castle1 {
-  position: absolute;
-  top: -230px;
-  z-index: 3;
-}
-
-#castle2 {
-  position: absolute;
-  top: -230px;
-  z-index: 3;
-}
-
-#bottle {
-  position: absolute;
-  height: 100%;
-  left: 250px;
-  bottom: -200px;
-  z-index: 2;
+.heroImage {
+  background: url(../images/rangeBottles/heroImage.jpg) no-repeat center center;
+  background-size: contain;
+  min-height: 100%;
+  width: 100%;
+  padding: 0!important
+  overflow: hidden;
 }
 
 /*---------- Hero Image css ends -------------*/
