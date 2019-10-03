@@ -590,7 +590,7 @@
                         </div>
                         <div class="testimonial-title">
                             <h3>Yuri Cholak</h3>
-                            <small>Wannabe Enginner</small>
+                            <small>ACTUALLY an Enginner</small>
                         </div>
                     </div>
 

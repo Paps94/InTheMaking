@@ -4,8 +4,10 @@
     <!--meta tags-->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="portfolio template based on HTML5">
-    <meta name="keywords" content="onepage, developer, resume, cv, ,personal, portfolio, personal resume, clean, modern">
+    <meta name="description" content="Portfolio website created through laravel to showcase to potential employers what I can do button
+    also have a point of reference for people starting in web designing/deveopment what the outcome looks like live since my code for
+    this project is accessible to everyone in my Github which can be found in the website!">
+    <meta name="keywords" content="onepage, developer, resume, cv, personal, portfolio, personal resume, clean, modern">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
