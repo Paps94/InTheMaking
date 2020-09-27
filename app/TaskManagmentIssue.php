@@ -11,12 +11,10 @@ class TaskManagmentIssue extends Model
     protected $dates = ['deadline'];
 
     protected $fillable = [
-
       'name',
       'description',
       'priority',
       'deadline'
-
     ];
 
     public function photos()
