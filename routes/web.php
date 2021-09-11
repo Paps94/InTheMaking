@@ -47,6 +47,7 @@ Route::post('/contact', [
 
 Route::group(['middleware' => 'under-construction'], function () {
   Route::resource('issues', 'IssuesController');
+  Route::resource('birthdays', 'BirthdaysController');
   Route::resource('olddumbreck', 'OldDumbreckController');
   Route::resource('tmissues', 'TaskManagmentIssuesController');
   //Route::post('issues/{id}/photos', 'IssuesController@addPhoto');
